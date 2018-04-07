@@ -3,8 +3,8 @@
 <html>
 
 <head>
-	<meta charset="UTF-8">
-	<title> Movie Generator </title>
+  <meta charset="UTF-8">
+  <title> Movie Generator </title>
   <script src="https://d3js.org/d3.v4.min.js"></script>
 </head>
 <style >
@@ -28,16 +28,17 @@ path {
 
 <body>
   <header><h1 >
-    Movie Generator
+    Movie Generator 
   </h1>
   </header>
 <script>
 
 d3.json("movies.json", function (error, data) {
   movieData = data;
-  function filterMovie(genre,yearStart,yearEnd){
+  function filterMovie(genre,yearStart,yearEnd,rating){
     var genrelist=genre.split("/");
-    var genres;
+    var ratinglist=rating.split("/");
+    var genres; var ratings;
     if(genrelist.length>2){
       genres=movieData.filter(function(d){ 
         return d.Genre==genrelist[0] || d.Genre==genrelist[1] || d.Genre==genrelist[2]});    
@@ -49,37 +50,104 @@ d3.json("movies.json", function (error, data) {
     }
     
     var year=genres.filter(function(d){ return d.Year>=yearStart && d.Year<=yearEnd });
-    return year.length;
+    if(ratinglist.length>1){
+       ratings=year.filter(function(d){ 
+       return d.Rated==ratinglist[0] || d.Rated==ratinglist[1]});
+    }else{
+      ratings=year.filter(function(d){ return d.Rated==rating});
+    }
+    return ratings.length;
   }
   var nodeData = {
         "name": "", "children": [{
-            "name": "Crime",
-            "children": [{"name": "1920-1960", "size": filterMovie("Crime",1920,1960)}, 
-            {"name": "1951-1990", "size": filterMovie("Crime",1961,2000)},
-            {"name": "1991-2016", "size": filterMovie("Crime",2001,2016)}]
+            "name": "Crime","children": [{
+              "name": "1920-1960", "children": [{ 
+                "name":"NR", "size":filterMovie("Crime",1920,1960,"NR")},{   
+                "name":"PG/G", "size":filterMovie("Crime",1920,1960,"PG/G")},{ 
+                "name":"PG-13", "size":filterMovie("Crime",1920,1960,"PG-13")},{ 
+                "name":"R", "size":filterMovie("Crime",1920,1960,"R")}]},{
+              "name": "1961-1990", "children": [{
+                "name":"NR", "size":filterMovie("Crime",1961,1990,"NR")},{
+                "name":"PG/G", "size":filterMovie("Crime",1961,1990,"PG/G")}, { 
+                "name":"PG-13", "size":filterMovie("Crime",1961,1990,"PG-13")},{ 
+                "name":"R", "size":filterMovie("Crime",1961,1990,"R")}]},{
+              "name": "1991-2016", "children": [{ 
+                "name":"NR", "size":filterMovie("Crime",1991,2016,"NR")},{
+                "name":"PG/G", "size":filterMovie("Crime",1991,2016,"PG/G")}, { 
+                "name":"PG-13", "size":filterMovie("Crime",1991,2016,"PG-13")},{
+                "name":"R", "size":filterMovie("Crime",1991,2016,"R")}]}]
         }, {
-            "name": "Action/Adventure",
-            "children": [{"name": "1920-1960", "size": filterMovie("Action/Adventure",1920,1960)}, 
-            {"name": "1951-1990", "size": filterMovie("Action/Adventure",1961,2000)},
-            {"name": "1991-2016", "size": filterMovie("Action/Adventure",2001,2016)}]
+            "name": "Action/Adventure","children": [{
+              "name": "1920-1960", "children": [{ 
+                "name":"NR", "size":filterMovie("Action/Adventure",1920,1960,"NR")},{   
+                "name":"PG/G", "size":filterMovie("Action/Adventure",1920,1960,"PG/G")},{ 
+                "name":"PG-13", "size":filterMovie("Action/Adventure",1920,1960,"PG-13")},{ 
+                "name":"R", "size":filterMovie("Action/Adventure",1920,1960,"R")}]},{
+              "name": "1961-1990", "children": [{
+                "name":"NR", "size":filterMovie("Action/Adventure",1961,1990,"NR")},{
+                "name":"PG/G", "size":filterMovie("Action/Adventure",1961,1990,"PG/G")}, { 
+                "name":"PG-13", "size":filterMovie("Action/Adventure",1961,1990,"PG-13")},{ 
+                "name":"R", "size":filterMovie("Action/Adventure",1961,1990,"R")}]},{
+              "name": "1991-2016", "children": [{ 
+                "name":"NR", "size":filterMovie("Action/Adventure",1991,2016,"NR")},{
+                "name":"PG/G", "size":filterMovie("Action/Adventure",1991,2016,"PG/G")}, { 
+                "name":"PG-13", "size":filterMovie("Action/Adventure",1991,2016,"PG-13")},{
+                "name":"R", "size":filterMovie("Action/Adventure",1991,2016,"R")}]}]
+            
         },{
-            "name": "Drama/Biography",
-            "children": [{"name": "1920-1960", "size": filterMovie("Drama/Biography",1920,1960)}, 
-            {"name": "1951-1990", "size": filterMovie("Drama/Biography",1961,2000)},
-            {"name": "1991-2016", "size": filterMovie("Drama/Biography",2001,2016)}]
+            "name": "Drama/Biography","children": [{
+              "name": "1920-1960", "children": [{ 
+                "name":"NR", "size":filterMovie("Drama/Biography",1920,1960,"NR")},{   
+                "name":"PG/G", "size":filterMovie("Drama/Biography",1920,1960,"PG/G")},{ 
+                "name":"PG-13", "size":filterMovie("Drama/Biography",1920,1960,"PG-13")},{ 
+                "name":"R", "size":filterMovie("Drama/Biography",1920,1960,"R")}]},{
+              "name": "1961-1990", "children": [{
+                "name":"NR", "size":filterMovie("Drama/Biography",1961,1990,"NR")},{
+                "name":"PG/G", "size":filterMovie("Drama/Biography",1961,1990,"PG/G")}, { 
+                "name":"PG-13", "size":filterMovie("Drama/Biography",1961,1990,"PG-13")},{ 
+                "name":"R", "size":filterMovie("Drama/Biography",1961,1990,"R")}]},{
+              "name": "1991-2016", "children": [{ 
+                "name":"NR", "size":filterMovie("Drama/Biography",1991,2016,"NR")},{
+                "name":"PG/G", "size":filterMovie("Drama/Biography",1991,2016,"PG/G")}, { 
+                "name":"PG-13", "size":filterMovie("Drama/Biography",1991,2016,"PG-13")},{
+                "name":"R", "size":filterMovie("Drama/Biography",1991,2016,"R")}]}]
+          
         },{
-            "name": "Comedy/Animation",
-            "children": [{"name": "1920-1960", "size": filterMovie("Comedy/Animation",1920,1960)}, 
-            {"name": "1951-1990", "size": filterMovie("Comedy/Animation",1961,2000)},
-            {"name": "1991-2016", "size": filterMovie("Comedy/Animation",2001,2016)}]
+            "name": "Comedy/Animation","children": [{ 
+              "name": "1920-1960", "children": [{ 
+                "name":"NR", "size":filterMovie("Comedy/Animation",1920,1960,"NR")},{   
+                "name":"PG/G", "size":filterMovie("Comedy/Animation",1920,1960,"PG/G")},{ 
+                "name":"PG-13", "size":filterMovie("Comedy/Animation",1920,1960,"PG-13")},{ 
+                "name":"R", "size":filterMovie("Comedy/Animation",1920,1960,"R")}]},{
+              "name": "1961-1990", "children": [{
+                "name":"NR", "size":filterMovie("Comedy/Animation",1961,1990,"NR")},{
+                "name":"PG/G", "size":filterMovie("Comedy/Animation",1961,1990,"PG/G")}, { 
+                "name":"PG-13", "size":filterMovie("Comedy/Animation",1961,1990,"PG-13")},{ 
+                "name":"R", "size":filterMovie("Comedy/Animation",1961,1990,"R")}]},{
+              "name": "1991-2016", "children": [{ 
+                "name":"NR", "size":filterMovie("Comedy/Animation",1991,2016,"NR")},{
+                "name":"PG/G", "size":filterMovie("Comedy/Animation",1991,2016,"PG/G")}, { 
+                "name":"PG-13", "size":filterMovie("Comedy/Animation",1991,2016,"PG-13")},{
+                "name":"R", "size":filterMovie("Comedy/Animation",1991,2016,"R")}]}]
         },{
-            "name": "Horror/Mystery/Sci-Fi",
-            "children": [{"name": "1920-1960", "size": filterMovie("Horror/Mystery",1920,1960)}, 
-            {"name": "1951-1990", "size": filterMovie("Horror/Mystery",1961,2000)},
-            {"name": "1991-2016", "size": filterMovie("Horror/Mystery",2001,2016)}]
+            "name": "Horror/Mystery/Sci-Fi","children": [{
+              "name": "1920-1960", "children": [{ 
+                "name":"NR", "size":filterMovie("Horror/Mystery/Sci-Fi",1920,1960,"NR")},{   
+                "name":"PG/G", "size":filterMovie("Horror/Mystery/Sci-Fi",1920,1960,"PG/G")},{ 
+                "name":"PG-13", "size":filterMovie("Horror/Mystery/Sci-Fi",1920,1960,"PG-13")},{ 
+                "name":"R", "size":filterMovie("Horror/Mystery/Sci-Fi",1920,1960,"R")}]},{
+              "name": "1961-1990", "children": [{
+                "name":"NR", "size":filterMovie("Horror/Mystery/Sci-Fi",1961,1990,"NR")},{
+                "name":"PG/G", "size":filterMovie("Horror/Mystery/Sci-Fi",1961,1990,"PG/G")}, { 
+                "name":"PG-13", "size":filterMovie("Horror/Mystery/Sci-Fi",1961,1990,"PG-13")},{ 
+                "name":"R", "size":filterMovie("Horror/Mystery/Sci-Fi",1961,1990,"R")}]},{
+              "name": "1991-2016", "children": [{ 
+                "name":"NR", "size":filterMovie("Horror/Mystery/Sci-Fi",1991,2016,"NR")},{
+                "name":"PG/G", "size":filterMovie("Horror/Mystery/Sci-Fi",1991,2016,"PG/G")}, { 
+                "name":"PG-13", "size":filterMovie("Horror/Mystery/Sci-Fi",1991,2016,"PG-13")},{
+                "name":"R", "size":filterMovie("Horror/Mystery/Sci-Fi",1991,2016,"R")}]}]
         }]
   };
-console.log(nodeData);
 var width = 960,
     height = 700,
     radius = (Math.min(width, height) / 2) - 10;
@@ -123,9 +191,12 @@ var svg = d3.select("body").append("svg")
     function mouseover(d){
       svg.selectAll("text").remove();
       var parent_name="";
-      if(d.data.name!="" && d.parent.data.name!=""){
-        parent_name=d.parent.data.name+"->";
-      } 
+      var current=d;
+      while(current.parent){
+        parent_name=current.parent.data.name+"->"+parent_name;
+        current=current.parent;
+      }
+      parent_name=parent_name.substring(2,parent_name.length);
       svg
       .append("text")
       .text(parent_name + d.data.name)
