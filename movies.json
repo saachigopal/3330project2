@@ -8,13 +8,12 @@
       "Genre": "Crime",
       "Director": "Frank Darabont",
       "Country": "USA",
-      "Oscars Won": "0",
+      "OscarsWon": "0",
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BODU4MjU4NjIwNl5BMl5BanBnXkFtZTgwMDU2MjEyMDE@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 91,
-      "Audience (imdbRating)": 93,
-      "BoxOffice (US Gross)": "58,500,000",
-      "Production": "Columbia Pictures",
-      "Plot Summary": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency."
+      "Critic": 91,
+      "Audience": 93,
+      "BoxOffice": "58,500,000",
+      "Production": "Columbia Pictures"
    },
    {
       "Index": 2,
@@ -25,13 +24,12 @@
       "Genre": "Crime",
       "Director": "Francis Ford Coppola",
       "Country": "USA",
-      "Oscars Won": 3,
+      "OscarsWon": 3,
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BZTRmNjQ1ZDYtNDgzMy00OGE0LWE4N2YtNTkzNWQ5ZDhlNGJmL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 98,
-      "Audience (imdbRating)": 92,
-      "BoxOffice (US Gross)": "245,066,411",
-      "Production": "Paramount Pictures",
-      "Plot Summary": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son."
+      "Critic": 98,
+      "Audience": 92,
+      "BoxOffice": "245,066,411",
+      "Production": "Paramount Pictures"
    },
    {
       "Index": 3,
@@ -42,13 +40,12 @@
       "Genre": "Crime",
       "Director": "Francis Ford Coppola",
       "Country": "USA",
-      "Oscars Won": 6,
+      "OscarsWon": 6,
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjZiNzIxNTQtNDc5Zi00YWY1LThkMTctMDgzYjY4YjI1YmQyL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 97,
-      "Audience (imdbRating)": 90,
-      "BoxOffice (US Gross)": "57,300,000",
-      "Production": "Paramount Pictures",
-      "Plot Summary": "The early life and career of Vito Corleone in 1920s New York is portrayed while his son, Michael, expands and tightens his grip on the family crime syndicate."
+      "Critic": 97,
+      "Audience": 90,
+      "BoxOffice": "57,300,000",
+      "Production": "Paramount Pictures"
    },
    {
       "Index": 4,
@@ -59,13 +56,12 @@
       "Genre": "Action",
       "Director": "Christopher Nolan",
       "Country": "USA, UK",
-      "Oscars Won": 2,
+      "OscarsWon": 2,
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 94,
-      "Audience (imdbRating)": 90,
-      "BoxOffice (US Gross)": "533,316,061",
-      "Production": "Warner Bros. Pictures/Legendary",
-      "Plot Summary": "When the menace known as the Joker emerges from his mysterious past, he wreaks havoc and chaos on the people of Gotham, the Dark Knight must accept one of the greatest psychological and physical tests of his ability to fight injustice."
+      "Critic": 94,
+      "Audience": 90,
+      "BoxOffice": "533,316,061",
+      "Production": "Warner Bros. Pictures/Legendary"
    },
    {
       "Index": 5,
@@ -76,13 +72,12 @@
       "Genre": "Crime",
       "Director": "Sidney Lumet",
       "Country": "USA",
-      "Oscars Won": "0",
+      "OscarsWon": "0",
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BODQwOTc5MDM2N15BMl5BanBnXkFtZTcwODQxNTEzNA@@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 100,
-      "Audience (imdbRating)": 89,
-      "BoxOffice (US Gross)": "2,000,000",
-      "Production": "Criterion Collection",
-      "Plot Summary": "A jury holdout attempts to prevent a miscarriage of justice by forcing his colleagues to reconsider the evidence."
+      "Critic": 100,
+      "Audience": 89,
+      "BoxOffice": "2,000,000",
+      "Production": "Criterion Collection"
    },
    {
       "Index": 6,
@@ -93,13 +88,12 @@
       "Genre": "Biography",
       "Director": "Steven Spielberg",
       "Country": "USA",
-      "Oscars Won": 7,
+      "OscarsWon": 7,
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BNDE4OTMxMTctNmRhYy00NWE2LTg3YzItYTk3M2UwOTU5Njg4XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 97,
-      "Audience (imdbRating)": 89,
-      "BoxOffice (US Gross)": "96,067,179",
-      "Production": "Universal Pictures",
-      "Plot Summary": "In German-occupied Poland during World War II, Oskar Schindler gradually becomes concerned for his Jewish workforce after witnessing their persecution by the Nazi Germans."
+      "Critic": 97,
+      "Audience": 89,
+      "BoxOffice": "96,067,179",
+      "Production": "Universal Pictures"
    },
    {
       "Index": 7,
@@ -110,13 +104,12 @@
       "Genre": "Crime",
       "Director": "Quentin Tarantino",
       "Country": "USA",
-      "Oscars Won": 1,
+      "OscarsWon": 1,
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTkxMTA5OTAzMl5BMl5BanBnXkFtZTgwNjA5MDc3NjE@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 94,
-      "Audience (imdbRating)": 89,
-      "BoxOffice (US Gross)": "107,928,762",
-      "Production": "Miramax Films",
-      "Plot Summary": "The lives of two mob hit men, a boxer, a gangster's wife, and a pair of diner bandits intertwine in four tales of violence and redemption."
+      "Critic": 94,
+      "Audience": 89,
+      "BoxOffice": "107,928,762",
+      "Production": "Miramax Films"
    },
    {
       "Index": 8,
@@ -127,13 +120,12 @@
       "Genre": "Adventure",
       "Director": "Peter Jackson",
       "Country": "USA, New Zealand",
-      "Oscars Won": 11,
+      "OscarsWon": 11,
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BYWY1ZWQ5YjMtMDE0MS00NWIzLWE1M2YtODYzYTk2OTNlYWZmXkEyXkFqcGdeQXVyNDUyOTg3Njg@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 93,
-      "Audience (imdbRating)": 89,
-      "BoxOffice (US Gross)": "364,000,000",
-      "Production": "New Line Cinema",
-      "Plot Summary": "Gandalf and Aragorn lead the World of Men against Sauron's army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring."
+      "Critic": 93,
+      "Audience": 89,
+      "BoxOffice": "364,000,000",
+      "Production": "New Line Cinema"
    },
    {
       "Index": 9,
@@ -144,13 +136,12 @@
       "Genre": "Western",
       "Director": "Sergio Leone",
       "Country": "Italy, Spain, West Germany",
-      "Oscars Won": "0",
+      "OscarsWon": "0",
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BOTQ5NDI3MTI4MF5BMl5BanBnXkFtZTgwNDQ4ODE5MDE@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 97,
-      "Audience (imdbRating)": 89,
-      "BoxOffice (US Gross)": "6,100,000",
-      "Production": "United Artists",
-      "Plot Summary": "A bounty hunting scam joins two men in an uneasy alliance against a third in a race to find a fortune in gold buried in a remote cemetery."
+      "Critic": 97,
+      "Audience": 89,
+      "BoxOffice": "6,100,000",
+      "Production": "United Artists"
    },
    {
       "Index": 10,
@@ -161,13 +152,12 @@
       "Genre": "Drama",
       "Director": "David Fincher",
       "Country": "USA, Germany",
-      "Oscars Won": "0",
+      "OscarsWon": "0",
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BZGY5Y2RjMmItNDg5Yy00NjUwLThjMTEtNDc2OGUzNTBiYmM1XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 79,
-      "Audience (imdbRating)": 88,
-      "BoxOffice (US Gross)": "37,030,012",
-      "Production": "20th Century Fox",
-      "Plot Summary": "An insomniac office worker, looking for a way to change his life, crosses paths with a devil-may-care soap maker, forming an underground fight club that evolves into something much, much more."
+      "Critic": 79,
+      "Audience": 88,
+      "BoxOffice": "37,030,012",
+      "Production": "20th Century Fox"
    },
    {
       "Index": 11,
@@ -178,13 +168,12 @@
       "Genre": "Adventure",
       "Director": "Peter Jackson",
       "Country": "New Zealand, USA",
-      "Oscars Won": 4,
+      "OscarsWon": 4,
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 91,
-      "Audience (imdbRating)": 88,
-      "BoxOffice (US Gross)": "314,000,000",
-      "Production": "New Line Cinema",
-      "Plot Summary": "A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle Earth from the Dark Lord Sauron."
+      "Critic": 91,
+      "Audience": 88,
+      "BoxOffice": "314,000,000",
+      "Production": "New Line Cinema"
    },
    {
       "Index": 12,
@@ -195,13 +184,12 @@
       "Genre": "Comedy",
       "Director": "Robert Zemeckis",
       "Country": "USA",
-      "Oscars Won": 6,
+      "OscarsWon": 6,
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BYThjM2MwZGMtMzg3Ny00NGRkLWE4M2EtYTBiNWMzOTY0YTI4XkEyXkFqcGdeQXVyNDYyMDk5MTU@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 72,
-      "Audience (imdbRating)": 88,
-      "BoxOffice (US Gross)": "405,000",
-      "Production": "Paramount Pictures",
-      "Plot Summary": "While not intelligent, Forrest Gump has accidentally been present at many historic moments, but his true love, Jenny Curran, eludes him."
+      "Critic": 72,
+      "Audience": 88,
+      "BoxOffice": "405,000",
+      "Production": "Paramount Pictures"
    },
    {
       "Index": 13,
@@ -212,13 +200,12 @@
       "Genre": "Action",
       "Director": "Irvin Kershner",
       "Country": "USA",
-      "Oscars Won": 1,
+      "OscarsWon": 1,
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BYmViY2M2MTYtY2MzOS00YjQ1LWIzYmEtOTBiNjhlMGM0NjZjXkEyXkFqcGdeQXVyNDYyMDk5MTU@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 94,
-      "Audience (imdbRating)": 88,
-      "BoxOffice (US Gross)": "4,548,170",
-      "Production": "Twentieth Century Fox",
-      "Plot Summary": "After the rebels are overpowered by the Empire on their newly established base, Luke Skywalker begins Jedi training with Master Yoda. His friends accept shelter from a questionable ally as Darth Vader hunts them in a plan to capture Luke."
+      "Critic": 94,
+      "Audience": 88,
+      "BoxOffice": "4,548,170",
+      "Production": "Twentieth Century Fox"
    },
    {
       "Index": 14,
@@ -229,13 +216,12 @@
       "Genre": "Action",
       "Director": "Christopher Nolan",
       "Country": "USA, UK",
-      "Oscars Won": 4,
+      "OscarsWon": 4,
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 86,
-      "Audience (imdbRating)": 88,
-      "BoxOffice (US Gross)": "292,568,851",
-      "Production": "Warner Bros. Pictures",
-      "Plot Summary": "A thief, who steals corporate secrets through use of dream-sharing technology, is given the inverse task of planting an idea into the mind of a CEO."
+      "Critic": 86,
+      "Audience": 88,
+      "BoxOffice": "292,568,851",
+      "Production": "Warner Bros. Pictures"
    },
    {
       "Index": 15,
@@ -246,13 +232,12 @@
       "Genre": "Adventure",
       "Director": "Peter Jackson",
       "Country": "USA, New Zealand",
-      "Oscars Won": 2,
+      "OscarsWon": 2,
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMDY0NmI4ZjctN2VhZS00YzExLTkyZGItMTJhOTU5NTg4MDU4XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 95,
-      "Audience (imdbRating)": 87,
-      "BoxOffice (US Gross)": "339,700,000",
-      "Production": "New Line Cinema",
-      "Plot Summary": "While Frodo and Sam edge closer to Mordor with the help of the shifty Gollum, the divided fellowship makes a stand against Sauron's new ally, Saruman, and his hordes of Isengard."
+      "Critic": 95,
+      "Audience": 87,
+      "BoxOffice": "339,700,000",
+      "Production": "New Line Cinema"
    },
    {
       "Index": 16,
@@ -263,13 +248,12 @@
       "Genre": "Drama",
       "Director": "Milos Forman",
       "Country": "USA",
-      "Oscars Won": 5,
+      "OscarsWon": 5,
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BZjA0OWVhOTAtYWQxNi00YzNhLWI4ZjYtNjFjZTEyYjJlNDVlL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 94,
-      "Audience (imdbRating)": 87,
-      "BoxOffice (US Gross)": "112,000,000",
-      "Production": "United Artists",
-      "Plot Summary": "A criminal pleads insanity after getting into trouble again and once in the mental institution rebels against the oppressive nurse and rallies up the scared patients."
+      "Critic": 94,
+      "Audience": 87,
+      "BoxOffice": "112,000,000",
+      "Production": "United Artists"
    },
    {
       "Index": 17,
@@ -280,13 +264,12 @@
       "Genre": "Crime",
       "Director": "Martin Scorsese",
       "Country": "USA",
-      "Oscars Won": 1,
+      "OscarsWon": 1,
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BNThjMzczMjctZmIwOC00NTQ4LWJhZWItZDdhNTk5ZTdiMWFlXkEyXkFqcGdeQXVyNDYyMDk5MTU@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 96,
-      "Audience (imdbRating)": 87,
-      "BoxOffice (US Gross)": "46,836,394",
-      "Production": "Warner Bros.",
-      "Plot Summary": "The story of Henry Hill and his life through the teen years into the years of mafia, covering his relationship with wife Karen Hill and his Mob partners Jimmy Conway and Tommy DeVitto in the Italian-American crime syndicate."
+      "Critic": 96,
+      "Audience": 87,
+      "BoxOffice": "46,836,394",
+      "Production": "Warner Bros."
    },
    {
       "Index": 18,
@@ -297,13 +280,12 @@
       "Genre": "Action",
       "Director": "Lana Wachowski, Lilly Wachowski",
       "Country": "USA",
-      "Oscars Won": 4,
+      "OscarsWon": 4,
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 87,
-      "Audience (imdbRating)": 87,
-      "BoxOffice (US Gross)": "171,479,930",
-      "Production": "Warner Bros. Pictures",
-      "Plot Summary": "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers."
+      "Critic": 87,
+      "Audience": 87,
+      "BoxOffice": "171,479,930",
+      "Production": "Warner Bros. Pictures"
    },
    {
       "Index": 19,
@@ -314,13 +296,12 @@
       "Genre": "Adventure",
       "Director": "Akira Kurosawa",
       "Country": "Japan",
-      "Oscars Won": "0",
+      "OscarsWon": "0",
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTc5MDY1MjU5MF5BMl5BanBnXkFtZTgwNDM2OTE4MzE@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 100,
-      "Audience (imdbRating)": 87,
-      "BoxOffice (US Gross)": "269,061",
-      "Production": "Columbia Pictures",
-      "Plot Summary": "A poor village under attack by bandits recruits seven unemployed samurai to help them defend themselves."
+      "Critic": 100,
+      "Audience": 87,
+      "BoxOffice": "269,061",
+      "Production": "Columbia Pictures"
    },
    {
       "Index": 20,
@@ -331,13 +312,12 @@
       "Genre": "Action",
       "Director": "George Lucas",
       "Country": "USA",
-      "Oscars Won": 6,
+      "OscarsWon": 6,
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BYzQ2OTk4N2QtOGQwNy00MmI3LWEwNmEtOTk0OTY3NDk2MGJkL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 93,
-      "Audience (imdbRating)": 87,
-      "BoxOffice (US Gross)": "322,740,140",
-      "Production": "20th Century Fox",
-      "Plot Summary": "Luke Skywalker joins forces with a Jedi Knight, a cocky pilot, a wookiee and two droids to save the galaxy from the Empire's world-destroying battle-station, while also attempting to rescue Princess Leia from the evil Darth Vader."
+      "Critic": 93,
+      "Audience": 87,
+      "BoxOffice": "322,740,140",
+      "Production": "20th Century Fox"
    },
    {
       "Index": 21,
@@ -348,13 +328,12 @@
       "Genre": "Crime",
       "Director": "Fernando Meirelles, Kátia Lund",
       "Country": "Brazil, France",
-      "Oscars Won": "0",
+      "OscarsWon": "0",
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BNDJiNTEwMjMtOGQ1ZC00OTczLWFjZjctZWQ0MGJjZmFkMjcwXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 91,
-      "Audience (imdbRating)": 87,
-      "BoxOffice (US Gross)": "7,563,397",
-      "Production": "Miramax Films",
-      "Plot Summary": "Two boys growing up in a violent neighborhood of Rio de Janeiro take different paths: one becomes a photographer, the other a drug dealer."
+      "Critic": 91,
+      "Audience": 87,
+      "BoxOffice": "7,563,397",
+      "Production": "Miramax Films"
    },
    {
       "Index": 22,
@@ -365,13 +344,12 @@
       "Genre": "Crime",
       "Director": "David Fincher",
       "Country": "USA",
-      "Oscars Won": "0",
+      "OscarsWon": "0",
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BOTUwODM5MTctZjczMi00OTk4LTg3NWUtNmVhMTAzNTNjYjcyXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 80,
-      "Audience (imdbRating)": 86,
-      "BoxOffice (US Gross)": "100,125,643",
-      "Production": "New Line Cinema",
-      "Plot Summary": "Two detectives, a rookie and a veteran, hunt a serial killer who uses the seven deadly sins as his motives."
+      "Critic": 80,
+      "Audience": 86,
+      "BoxOffice": "100,125,643",
+      "Production": "New Line Cinema"
    },
    {
       "Index": 23,
@@ -382,13 +360,12 @@
       "Genre": "Crime",
       "Director": "Jonathan Demme",
       "Country": "USA",
-      "Oscars Won": 5,
+      "OscarsWon": 5,
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BNjNhZTk0ZmEtNjJhMi00YzFlLWE1MmEtYzM1M2ZmMGMwMTU4XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 95,
-      "Audience (imdbRating)": 86,
-      "BoxOffice (US Gross)": "130,742,922",
-      "Production": "Orion Pictures Corporation",
-      "Plot Summary": "A young F.B.I. cadet must confide in an incarcerated and manipulative killer to receive his help on catching another serial killer who skins his victims."
+      "Critic": 95,
+      "Audience": 86,
+      "BoxOffice": "130,742,922",
+      "Production": "Orion Pictures Corporation"
    },
    {
       "Index": 24,
@@ -399,13 +376,12 @@
       "Genre": "Drama",
       "Director": "Frank Capra",
       "Country": "USA",
-      "Oscars Won": "0",
+      "OscarsWon": "0",
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTMzMzY5NDc4M15BMl5BanBnXkFtZTcwMzc4NjIxNw@@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 94,
-      "Audience (imdbRating)": 86,
-      "BoxOffice (US Gross)": "7,270,000",
-      "Production": "Liberty Films",
-      "Plot Summary": "An angel is sent from Heaven to help a desperately frustrated businessman by showing him what life would have been like if he had never existed."
+      "Critic": 94,
+      "Audience": 86,
+      "BoxOffice": "7,270,000",
+      "Production": "Liberty Films"
    },
    {
       "Index": 25,
@@ -416,13 +392,12 @@
       "Genre": "Comedy",
       "Director": "Roberto Benigni",
       "Country": "Italy",
-      "Oscars Won": 3,
+      "OscarsWon": 3,
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BYmJmM2Q4NmMtYThmNC00ZjRlLWEyZmItZTIwOTBlZDQ3NTQ1XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 80,
-      "Audience (imdbRating)": 86,
-      "BoxOffice (US Gross)": "57,598,247",
-      "Production": "Miramax",
-      "Plot Summary": "When an open-minded Jewish librarian and his son become victims of the Holocaust, he uses a perfect mixture of will, humor and imagination to protect his son from the dangers around their camp."
+      "Critic": 80,
+      "Audience": 86,
+      "BoxOffice": "57,598,247",
+      "Production": "Miramax"
    },
    {
       "Index": 26,
@@ -433,13 +408,12 @@
       "Genre": "Crime",
       "Director": "Bryan Singer",
       "Country": "USA, Germany",
-      "Oscars Won": 2,
+      "OscarsWon": 2,
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BYTViNjMyNmUtNDFkNC00ZDRlLThmMDUtZDU2YWE4NGI2ZjVmXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 88,
-      "Audience (imdbRating)": 86,
-      "BoxOffice (US Gross)": "23,341,568",
-      "Production": "Gramercy Pictures",
-      "Plot Summary": "A sole survivor tells of the twisty events leading up to a horrific gun battle on a boat, which began when five criminals met at a seemingly random police lineup."
+      "Critic": 88,
+      "Audience": 86,
+      "BoxOffice": "23,341,568",
+      "Production": "Gramercy Pictures"
    },
    {
       "Index": 27,
@@ -450,13 +424,12 @@
       "Genre": "Crime",
       "Director": "Luc Besson",
       "Country": "France",
-      "Oscars Won": "0",
+      "OscarsWon": "0",
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjdjMGU3MGYtN2Y5ZC00MTE4LWE4YWQtMTBhMjc3MTk0ZDUwXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 71,
-      "Audience (imdbRating)": 86,
-      "BoxOffice (US Gross)": "19,501,238",
-      "Production": "Columbia Pictures",
-      "Plot Summary": "Mathilda, a 12-year-old girl, is reluctantly taken in by Léon, a professional assassin, after her family is murdered. Léon and Mathilda form an unusual relationship, as she becomes his protégée and learns the assassin's trade."
+      "Critic": 71,
+      "Audience": 86,
+      "BoxOffice": "19,501,238",
+      "Production": "Columbia Pictures"
    },
    {
       "Index": 28,
@@ -467,13 +440,12 @@
       "Genre": "Drama",
       "Director": "Steven Spielberg",
       "Country": "USA",
-      "Oscars Won": 5,
+      "OscarsWon": 5,
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BZjhkMDM4MWItZTVjOC00ZDRhLThmYTAtM2I5NzBmNmNlMzI1XkEyXkFqcGdeQXVyNDYyMDk5MTU@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 92,
-      "Audience (imdbRating)": 86,
-      "BoxOffice (US Gross)": "261,540,909",
-      "Production": "Paramount Pictures",
-      "Plot Summary": "Following the Normandy Landings, a group of U.S. soldiers go behind enemy lines to retrieve a paratrooper whose brothers have been killed in action."
+      "Critic": 92,
+      "Audience": 86,
+      "BoxOffice": "261,540,909",
+      "Production": "Paramount Pictures"
    },
    {
       "Index": 29,
@@ -484,13 +456,12 @@
       "Genre": "Animation",
       "Director": "Hayao Miyazaki",
       "Country": "Japan",
-      "Oscars Won": 1,
+      "OscarsWon": 1,
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BOGJjNzZmMmUtMjljNC00ZjU5LWJiODQtZmEzZTU0MjBlNzgxL2ltYWdlXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 97,
-      "Audience (imdbRating)": 86,
-      "BoxOffice (US Gross)": "9,855,615",
-      "Production": "Walt Disney Pictures",
-      "Plot Summary": "During her family's move to the suburbs, a sullen 10-year-old girl wanders into a world ruled by gods, witches, and spirits, and where humans are changed into beasts."
+      "Critic": 97,
+      "Audience": 86,
+      "BoxOffice": "9,855,615",
+      "Production": "Walt Disney Pictures"
    },
    {
       "Index": 30,
@@ -501,13 +472,12 @@
       "Genre": "Western",
       "Director": "Sergio Leone",
       "Country": "Italy, USA",
-      "Oscars Won": "0",
+      "OscarsWon": "0",
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BNTVhNzQ1ZmQtZDY4Ny00ODgwLWIwZTUtODhmOTY3NTQ2MWQ5XkEyXkFqcGdeQXVyNjUwNzk3NDc@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 98,
-      "Audience (imdbRating)": 86,
-      "BoxOffice (US Gross)": "5,321,508",
-      "Production": "Paramount Pictures",
-      "Plot Summary": "A mysterious stranger with a harmonica joins forces with a notorious desperado to protect a beautiful widow from a ruthless assassin working for the railroad."
+      "Critic": 98,
+      "Audience": 86,
+      "BoxOffice": "5,321,508",
+      "Production": "Paramount Pictures"
    },
    {
       "Index": 31,
@@ -518,13 +488,12 @@
       "Genre": "Crime",
       "Director": "Tony Kaye",
       "Country": "USA",
-      "Oscars Won": "0",
+      "OscarsWon": "0",
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BZjA0MTM4MTQtNzY5MC00NzY3LWI1ZTgtYzcxMjkyMzU4MDZiXkEyXkFqcGdeQXVyNDYyMDk5MTU@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 83,
-      "Audience (imdbRating)": 85,
-      "BoxOffice (US Gross)": "6,719,864",
-      "Production": "New Line Cinema",
-      "Plot Summary": "A former neo-nazi skinhead tries to prevent his younger brother from going down the same wrong path that he did."
+      "Critic": 83,
+      "Audience": 85,
+      "BoxOffice": "6,719,864",
+      "Production": "New Line Cinema"
    },
    {
       "Index": 32,
@@ -535,13 +504,12 @@
       "Genre": "Adventure",
       "Director": "Christopher Nolan",
       "Country": "USA, UK, Canada, Iceland",
-      "Oscars Won": 1,
+      "OscarsWon": 1,
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjIxNTU4MzY4MF5BMl5BanBnXkFtZTgwMzM4ODI3MjE@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 71,
-      "Audience (imdbRating)": 86,
-      "BoxOffice (US Gross)": "158,737,441",
-      "Production": "Paramount Pictures",
-      "Plot Summary": "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival."
+      "Critic": 71,
+      "Audience": 86,
+      "BoxOffice": "158,737,441",
+      "Production": "Paramount Pictures"
    },
    {
       "Index": 33,
@@ -552,13 +520,12 @@
       "Genre": "Horror",
       "Director": "Alfred Hitchcock",
       "Country": "USA",
-      "Oscars Won": "0",
+      "OscarsWon": "0",
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BOWQ0MjRmZmUtY2Q2Yi00ODcxLWE4NGMtMTNjMDY1YmUzMjVkXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 97,
-      "Audience (imdbRating)": 85,
-      "BoxOffice (US Gross)": "32,000,000",
-      "Production": "Paramount Pictures",
-      "Plot Summary": "A Phoenix secretary embezzles $40,000 from her employer's client, goes on the run, and checks into a remote motel run by a young man under the domination of his mother."
+      "Critic": 97,
+      "Audience": 85,
+      "BoxOffice": "32,000,000",
+      "Production": "Paramount Pictures"
    },
    {
       "Index": 34,
@@ -569,13 +536,12 @@
       "Genre": "Drama",
       "Director": "Michael Curtiz",
       "Country": "USA",
-      "Oscars Won": 3,
+      "OscarsWon": 3,
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BY2IzZGY2YmEtYzljNS00NTM5LTgwMzUtMzM1NjQ4NGI0OTk0XkEyXkFqcGdeQXVyNDYyMDk5MTU@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 97,
-      "Audience (imdbRating)": 85,
-      "BoxOffice (US Gross)": "1,024,560",
-      "Production": "Warner Bros. Pictures",
-      "Plot Summary": "In Casablanca in December 1941, a cynical American expatriate encounters a former lover, with unforeseen complications."
+      "Critic": 97,
+      "Audience": 85,
+      "BoxOffice": "1,024,560",
+      "Production": "Warner Bros. Pictures"
    },
    {
       "Index": 35,
@@ -586,13 +552,12 @@
       "Genre": "Comedy",
       "Director": "Charles Chaplin",
       "Country": "USA",
-      "Oscars Won": "0",
+      "OscarsWon": "0",
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BZDRjMmI3ZjgtMGE3Mi00NjY5LTg0NWMtMmU3YzgyMjhmMjIzL2ltYWdlXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 98,
-      "Audience (imdbRating)": 86,
-      "BoxOffice (US Gross)": "19,181",
-      "Production": "Twentieth Century Fox Home Entertainment",
-      "Plot Summary": "With the aid of a wealthy erratic tippler, a dewy-eyed tramp who has fallen in love with a sightless flower girl accumulates money to be able to help her medically."
+      "Critic": 98,
+      "Audience": 86,
+      "BoxOffice": "19,181",
+      "Production": "Twentieth Century Fox Home Entertainment"
    },
    {
       "Index": 36,
@@ -603,13 +568,12 @@
       "Genre": "Crime",
       "Director": "Frank Darabont",
       "Country": "USA",
-      "Oscars Won": "0",
+      "OscarsWon": "0",
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTUxMzQyNjA5MF5BMl5BanBnXkFtZTYwOTU2NTY3._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 80,
-      "Audience (imdbRating)": 85,
-      "BoxOffice (US Gross)": "136,801,374",
-      "Production": "Warner Bros. Pictures",
-      "Plot Summary": "The lives of guards on Death Row are affected by one of their charges: a black man accused of child murder and rape, yet who has a mysterious gift."
+      "Critic": 80,
+      "Audience": 85,
+      "BoxOffice": "136,801,374",
+      "Production": "Warner Bros. Pictures"
    },
    {
       "Index": 37,
@@ -620,13 +584,12 @@
       "Genre": "Biography",
       "Director": "Olivier Nakache, Eric Toledano",
       "Country": "France",
-      "Oscars Won": "0",
+      "OscarsWon": "0",
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTYxNDA3MDQwNl5BMl5BanBnXkFtZTcwNTU4Mzc1Nw@@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 74,
-      "Audience (imdbRating)": 86,
-      "BoxOffice (US Gross)": "13,179,837",
-      "Production": "The Weinstein Company",
-      "Plot Summary": "After he becomes a quadriplegic from a paragliding accident, an aristocrat hires a young man from the projects to be his caregiver."
+      "Critic": 74,
+      "Audience": 86,
+      "BoxOffice": "13,179,837",
+      "Production": "The Weinstein Company"
    },
    {
       "Index": 38,
@@ -637,13 +600,12 @@
       "Genre": "Comedy",
       "Director": "Charles Chaplin",
       "Country": "USA",
-      "Oscars Won": "0",
+      "OscarsWon": "0",
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BYjJiZjMzYzktNjU0NS00OTkxLWEwYzItYzdhYWJjN2QzMTRlL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 100,
-      "Audience (imdbRating)": 85,
-      "BoxOffice (US Gross)": "163,245",
-      "Production": "United Artists",
-      "Plot Summary": "The Tramp struggles to live in modern industrial society with the help of a young homeless woman."
+      "Critic": 100,
+      "Audience": 85,
+      "BoxOffice": "163,245",
+      "Production": "United Artists"
    },
    {
       "Index": 39,
@@ -654,13 +616,12 @@
       "Genre": "Action",
       "Director": "Steven Spielberg",
       "Country": "USA",
-      "Oscars Won": 4,
+      "OscarsWon": 4,
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjA0ODEzMTc1Nl5BMl5BanBnXkFtZTcwODM2MjAxNA@@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 94,
-      "Audience (imdbRating)": 85,
-      "BoxOffice (US Gross)": "248,159,971",
-      "Production": "Paramount Pictures",
-      "Plot Summary": "Archaeologist and adventurer Indiana Jones is hired by the U.S. government to find the Ark of the Covenant before the Nazis."
+      "Critic": 94,
+      "Audience": 85,
+      "BoxOffice": "248,159,971",
+      "Production": "Paramount Pictures"
    },
    {
       "Index": 40,
@@ -671,13 +632,12 @@
       "Genre": "Mystery",
       "Director": "Alfred Hitchcock",
       "Country": "USA",
-      "Oscars Won": "0",
+      "OscarsWon": "0",
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BNGUxYWM3M2MtMGM3Mi00ZmRiLWE0NGQtZjE5ODI2OTJhNTU0XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 100,
-      "Audience (imdbRating)": 85,
-      "BoxOffice (US Gross)": "36,764,313",
-      "Production": "Paramount Pictures",
-      "Plot Summary": "A wheelchair-bound photographer spies on his neighbours from his apartment window and becomes convinced one of them has committed murder."
+      "Critic": 100,
+      "Audience": 85,
+      "BoxOffice": "36,764,313",
+      "Production": "Paramount Pictures"
    },
    {
       "Index": 41,
@@ -688,13 +648,12 @@
       "Genre": "Biography",
       "Director": "Roman Polanski",
       "Country": "France, Poland, Germany, UK",
-      "Oscars Won": 3,
+      "OscarsWon": 3,
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BOWRiZDIxZjktMTA1NC00MDQ2LWEzMjUtMTliZmY3NjQ3ODJiXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 95,
-      "Audience (imdbRating)": 85,
-      "BoxOffice (US Gross)": "32,519,322",
-      "Production": "Focus Features",
-      "Plot Summary": "A Polish Jewish musician struggles to survive the destruction of the Warsaw ghetto of World War II."
+      "Critic": 95,
+      "Audience": 85,
+      "BoxOffice": "32,519,322",
+      "Production": "Focus Features"
    },
    {
       "Index": 42,
@@ -705,13 +664,12 @@
       "Genre": "Crime",
       "Director": "Martin Scorsese",
       "Country": "USA, Hong Kong",
-      "Oscars Won": 4,
+      "OscarsWon": 4,
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTI1MTY2OTIxNV5BMl5BanBnXkFtZTYwNjQ4NjY3._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 90,
-      "Audience (imdbRating)": 85,
-      "BoxOffice (US Gross)": "132,300,000",
-      "Production": "Warner Bros. Pictures",
-      "Plot Summary": "An undercover cop and a mole in the police attempt to identify each other while infiltrating an Irish gang in South Boston."
+      "Critic": 90,
+      "Audience": 85,
+      "BoxOffice": "132,300,000",
+      "Production": "Warner Bros. Pictures"
    },
    {
       "Index": 43,
@@ -722,13 +680,12 @@
       "Genre": "Action",
       "Director": "James Cameron",
       "Country": "USA, France",
-      "Oscars Won": 4,
+      "OscarsWon": 4,
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMGU2NzRmZjUtOGUxYS00ZjdjLWEwZWItY2NlM2JhNjkxNTFmXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 93,
-      "Audience (imdbRating)": 85,
-      "BoxOffice (US Gross)": "198,116,802",
-      "Production": "TriStar Pictures",
-      "Plot Summary": "A cyborg, identical to the one who failed to kill Sarah Connor, must now protect her ten year old son, John Connor, from a more advanced cyborg."
+      "Critic": 93,
+      "Audience": 85,
+      "BoxOffice": "198,116,802",
+      "Production": "TriStar Pictures"
    },
    {
       "Index": 44,
@@ -739,13 +696,12 @@
       "Genre": "Adventure",
       "Director": "Robert Zemeckis",
       "Country": "USA",
-      "Oscars Won": 1,
+      "OscarsWon": 1,
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BZmU0M2Y1OGUtZjIxNi00ZjBkLTg1MjgtOWIyNThiZWIwYjRiXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 96,
-      "Audience (imdbRating)": 85,
-      "BoxOffice (US Gross)": "2,925,880",
-      "Production": "Universal Pictures",
-      "Plot Summary": "Marty McFly, a 17-year-old high school student, is accidentally sent 30 years into the past in a time-traveling DeLorean invented by his close friend, the maverick scientist Doc Brown."
+      "Critic": 96,
+      "Audience": 85,
+      "BoxOffice": "2,925,880",
+      "Production": "Universal Pictures"
    },
    {
       "Index": 45,
@@ -756,13 +712,12 @@
       "Genre": "Drama",
       "Director": "Damien Chazelle",
       "Country": "USA",
-      "Oscars Won": 3,
+      "OscarsWon": 3,
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BOTVhMWQ5MDktMGE3OS00MjVlLWExZWYtMzY2MTg4ZGFiZDQ5L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 94,
-      "Audience (imdbRating)": 85,
-      "BoxOffice (US Gross)": "13,092,000",
-      "Production": "Sony Pictures Classics",
-      "Plot Summary": "A promising young drummer enrolls at a cut-throat music conservatory where his dreams of greatness are mentored by an instructor who will stop at nothing to realize a student's potential."
+      "Critic": 94,
+      "Audience": 85,
+      "BoxOffice": "13,092,000",
+      "Production": "Sony Pictures Classics"
    },
    {
       "Index": 46,
@@ -773,13 +728,12 @@
       "Genre": "Action",
       "Director": "Ridley Scott",
       "Country": "USA, UK",
-      "Oscars Won": 5,
+      "OscarsWon": 5,
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMDliMmNhNDEtODUyOS00MjNlLTgxODEtN2U3NzIxMGVkZTA1L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 76,
-      "Audience (imdbRating)": 85,
-      "BoxOffice (US Gross)": "187,705,427",
-      "Production": "Dreamworks Distribution LLC",
-      "Plot Summary": "When a Roman general is betrayed and his family murdered by an emperor's corrupt son, he comes to Rome as a gladiator to seek revenge."
+      "Critic": 76,
+      "Audience": 85,
+      "BoxOffice": "187,705,427",
+      "Production": "Dreamworks Distribution LLC"
    },
    {
       "Index": 47,
@@ -790,13 +744,12 @@
       "Genre": "Mystery",
       "Director": "Christopher Nolan",
       "Country": "USA",
-      "Oscars Won": "0",
+      "OscarsWon": "0",
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BZTcyNjk1MjgtOWI3Mi00YzQwLWI5MTktMzY4ZmI2NDAyNzYzXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 92,
-      "Audience (imdbRating)": 85,
-      "BoxOffice (US Gross)": "23,844,220",
-      "Production": "Newmarket Films",
-      "Plot Summary": "A man juggles searching for his wife's murderer and keeping his short-term memory loss from being an obstacle."
+      "Critic": 92,
+      "Audience": 85,
+      "BoxOffice": "23,844,220",
+      "Production": "Newmarket Films"
    },
    {
       "Index": 48,
@@ -807,13 +760,12 @@
       "Genre": "Drama",
       "Director": "Christopher Nolan",
       "Country": "USA, UK",
-      "Oscars Won": "0",
+      "OscarsWon": "0",
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjA4NDI0MTIxNF5BMl5BanBnXkFtZTYwNTM0MzY2._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 75,
-      "Audience (imdbRating)": 85,
-      "BoxOffice (US Gross)": "53,100,000",
-      "Production": "Buena Vista Pictures",
-      "Plot Summary": "Two stage magicians engage in competitive one-upmanship in an attempt to create the ultimate stage illusion."
+      "Critic": 75,
+      "Audience": 85,
+      "BoxOffice": "53,100,000",
+      "Production": "Buena Vista Pictures"
    },
    {
       "Index": 49,
@@ -824,13 +776,12 @@
       "Genre": "Animation",
       "Director": "Roger Allers, Rob Minkoff",
       "Country": "USA",
-      "Oscars Won": 2,
+      "OscarsWon": 2,
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BYTYxNGMyZTYtMjE3MS00MzNjLWFjNmYtMDk3N2FmM2JiM2M1XkEyXkFqcGdeQXVyNjY5NDU4NzI@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 92,
-      "Audience (imdbRating)": 85,
-      "BoxOffice (US Gross)": "94,240,635",
-      "Production": "Buena Vista",
-      "Plot Summary": "Lion cub and future king Simba searches for his identity. His eagerness to please others and penchant for testing his boundaries sometimes gets him into trouble."
+      "Critic": 92,
+      "Audience": 85,
+      "BoxOffice": "94,240,635",
+      "Production": "Buena Vista"
    },
    {
       "Index": 50,
@@ -841,13 +792,12 @@
       "Genre": "Drama",
       "Director": "Francis Ford Coppola",
       "Country": "USA",
-      "Oscars Won": 2,
+      "OscarsWon": 2,
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMDg1MDgzMmQtNDhlYS00MzZiLTllZGItNzliZTE1ODBiZDQwXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 96,
-      "Audience (imdbRating)": 85,
-      "BoxOffice (US Gross)": "83,471,511",
-      "Production": "United Artists",
-      "Plot Summary": "During the Vietnam War, Captain Willard is sent on a dangerous mission into Cambodia to assassinate a renegade colonel who has set himself up as a god among a local tribe."
+      "Critic": 96,
+      "Audience": 85,
+      "BoxOffice": "83,471,511",
+      "Production": "United Artists"
    },
    {
       "Index": 51,
@@ -858,13 +808,12 @@
       "Genre": "Horror",
       "Director": "Ridley Scott",
       "Country": "UK, USA",
-      "Oscars Won": 1,
+      "OscarsWon": 1,
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BNDNhN2IxZWItNGEwYS00ZDNhLThiM2UtODU3NWJlZjBkYjQxXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 97,
-      "Audience (imdbRating)": 85,
-      "BoxOffice (US Gross)": "78,900,000",
-      "Production": "20th Century Fox",
-      "Plot Summary": "After a space merchant vessel perceives an unknown transmission as a distress call, its landing on the source moon finds one of the crew attacked by a mysterious life-form, and they soon realize that its life cycle has merely begun."
+      "Critic": 97,
+      "Audience": 85,
+      "BoxOffice": "78,900,000",
+      "Production": "20th Century Fox"
    },
    {
       "Index": 52,
@@ -875,13 +824,12 @@
       "Genre": "Drama",
       "Director": "Billy Wilder",
       "Country": "USA",
-      "Oscars Won": 3,
+      "OscarsWon": 3,
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTU0NTkyNzYwMF5BMl5BanBnXkFtZTgwMDU0NDk5MTI@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 98,
-      "Audience (imdbRating)": 85,
-      "BoxOffice (US Gross)": "5,000,000",
-      "Production": "Paramount Pictures",
-      "Plot Summary": "A screenwriter is hired to rework a faded silent film star's script only to find himself developing a dangerous relationship."
+      "Critic": 98,
+      "Audience": 85,
+      "BoxOffice": "5,000,000",
+      "Production": "Paramount Pictures"
    },
    {
       "Index": 53,
@@ -892,13 +840,12 @@
       "Genre": "Comedy",
       "Director": "Stanley Kubrick",
       "Country": "USA, UK",
-      "Oscars Won": "0",
+      "OscarsWon": "0",
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTU2ODM2NTkxNF5BMl5BanBnXkFtZTcwOTMwMzU3Mg@@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 99,
-      "Audience (imdbRating)": 85,
-      "BoxOffice (US Gross)": "9,440,272",
-      "Production": "Sony Pictures",
-      "Plot Summary": "An insane general triggers a path to nuclear holocaust that a war room full of politicians and generals frantically try to stop."
+      "Critic": 99,
+      "Audience": 85,
+      "BoxOffice": "9,440,272",
+      "Production": "Sony Pictures"
    },
    {
       "Index": 54,
@@ -909,13 +856,12 @@
       "Genre": "Comedy",
       "Director": "Charles Chaplin",
       "Country": "USA",
-      "Oscars Won": "0",
+      "OscarsWon": "0",
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMmExYWJjNTktNGUyZS00ODhmLTkxYzAtNWIzOGEyMGNiMmUwXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 92,
-      "Audience (imdbRating)": 85,
-      "BoxOffice (US Gross)": "5,000,000",
-      "Production": "Criterion Collection",
-      "Plot Summary": "Dictator Adenoid Hynkel tries to expand his empire while a poor Jewish barber tries to avoid persecution from Hynkel's regime."
+      "Critic": 92,
+      "Audience": 85,
+      "BoxOffice": "5,000,000",
+      "Production": "Criterion Collection"
    },
    {
       "Index": 55,
@@ -926,13 +872,12 @@
       "Genre": "Drama",
       "Director": "Giuseppe Tornatore",
       "Country": "Italy, France",
-      "Oscars Won": 1,
+      "OscarsWon": 1,
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BM2FhYjEyYmYtMDI1Yy00YTdlLWI2NWQtYmEzNzAxOGY1NjY2XkEyXkFqcGdeQXVyNTA3NTIyNDg@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 90,
-      "Audience (imdbRating)": 85,
-      "BoxOffice (US Gross)": "239,630",
-      "Production": "Miramax Films",
-      "Plot Summary": "A filmmaker recalls his childhood, when he fell in love with the movies at his village's theater and formed a deep friendship with the theater's projectionist."
+      "Critic": 90,
+      "Audience": 85,
+      "BoxOffice": "239,630",
+      "Production": "Miramax Films"
    },
    {
       "Index": 56,
@@ -943,13 +888,12 @@
       "Genre": "Drama",
       "Director": "Florian Henckel von Donnersmarck",
       "Country": "Germany",
-      "Oscars Won": 1,
+      "OscarsWon": 1,
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BNDUzNjYwNDYyNl5BMl5BanBnXkFtZTcwNjU3ODQ0MQ@@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 92,
-      "Audience (imdbRating)": 85,
-      "BoxOffice (US Gross)": "11,200,000",
-      "Production": "Sony Pictures Classics",
-      "Plot Summary": "In 1984 East Berlin, an agent of the secret police, conducting surveillance on a writer and his lover, finds himself becoming increasingly absorbed by their lives."
+      "Critic": 92,
+      "Audience": 85,
+      "BoxOffice": "11,200,000",
+      "Production": "Sony Pictures Classics"
    },
    {
       "Index": 57,
@@ -960,13 +904,12 @@
       "Genre": "Animation",
       "Director": "Isao Takahata",
       "Country": "Japan",
-      "Oscars Won": "0",
+      "OscarsWon": "0",
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BZjEwNDVhZjMtYzA1MS00ZWUxLThjOGUtZTliNGZiNGYyMjA3XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 97,
-      "Audience (imdbRating)": 85,
-      "BoxOffice (US Gross)": "5,000,000",
-      "Production": "Shinchosha Company",
-      "Plot Summary": "A young boy and his little sister struggle to survive in Japan during World War II."
+      "Critic": 97,
+      "Audience": 85,
+      "BoxOffice": "5,000,000",
+      "Production": "Shinchosha Company"
    },
    {
       "Index": 58,
@@ -977,13 +920,12 @@
       "Genre": "Drama",
       "Director": "Stanley Kubrick",
       "Country": "USA",
-      "Oscars Won": "0",
+      "OscarsWon": "0",
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMDdkYzE5ODYtMmIwZi00MDgzLTk1YWEtZTcwNGRmMzAwNDMzXkEyXkFqcGdeQXVyNDQzMDg4Nzk@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 95,
-      "Audience (imdbRating)": 85,
-      "BoxOffice (US Gross)": "1,000,000",
-      "Production": "United Artists",
-      "Plot Summary": "After refusing to attack an enemy position, a general accuses the soldiers of cowardice and their commanding officer must defend them."
+      "Critic": 95,
+      "Audience": 85,
+      "BoxOffice": "1,000,000",
+      "Production": "United Artists"
    },
    {
       "Index": 59,
@@ -994,13 +936,12 @@
       "Genre": "Drama",
       "Director": "Quentin Tarantino",
       "Country": "USA",
-      "Oscars Won": 2,
+      "OscarsWon": 2,
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjIyNTQ5NjQ1OV5BMl5BanBnXkFtZTcwODg1MDU4OA@@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 87,
-      "Audience (imdbRating)": 84,
-      "BoxOffice (US Gross)": "162,804,648",
-      "Production": "The Weinstein Co.",
-      "Plot Summary": "With the help of a German bounty hunter , a freed slave sets out to rescue his wife from a brutal Mississippi plantation owner."
+      "Critic": 87,
+      "Audience": 84,
+      "BoxOffice": "162,804,648",
+      "Production": "The Weinstein Co."
    },
    {
       "Index": 60,
@@ -1011,13 +952,12 @@
       "Genre": "Horror",
       "Director": "Stanley Kubrick",
       "Country": "UK, USA",
-      "Oscars Won": "0",
+      "OscarsWon": "0",
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BZWFlYmY2MGEtZjVkYS00YzU4LTg0YjQtYzY1ZGE3NTA5NGQxXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 87,
-      "Audience (imdbRating)": 84,
-      "BoxOffice (US Gross)": "44,017,374",
-      "Production": "Warner Bros. Pictures",
-      "Plot Summary": "A family heads to an isolated hotel for the winter where an evil and spiritual presence influences the father into violence, while his psychic son sees horrific forebodings from the past and of the future."
+      "Critic": 87,
+      "Audience": 84,
+      "BoxOffice": "44,017,374",
+      "Production": "Warner Bros. Pictures"
    },
    {
       "Index": 61,
@@ -1028,13 +968,12 @@
       "Genre": "Animation",
       "Director": "Andrew Stanton",
       "Country": "USA",
-      "Oscars Won": 1,
+      "OscarsWon": 1,
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjExMTg5OTU0NF5BMl5BanBnXkFtZTcwMjMxMzMzMw@@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 96,
-      "Audience (imdbRating)": 84,
-      "BoxOffice (US Gross)": "223,749,872",
-      "Production": "Walt Disney Pictures",
-      "Plot Summary": "In the distant future, a small waste-collecting robot inadvertently embarks on a space journey that will ultimately decide the fate of mankind."
+      "Critic": 96,
+      "Audience": 84,
+      "BoxOffice": "223,749,872",
+      "Production": "Walt Disney Pictures"
    },
    {
       "Index": 62,
@@ -1045,13 +984,12 @@
       "Genre": "Drama",
       "Director": "Sam Mendes",
       "Country": "USA",
-      "Oscars Won": 5,
+      "OscarsWon": 5,
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjM4NTI5NzYyNV5BMl5BanBnXkFtZTgwNTkxNTYxMTE@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 88,
-      "Audience (imdbRating)": 84,
-      "BoxOffice (US Gross)": "130,096,601",
-      "Production": "Dream Works",
-      "Plot Summary": "A sexually frustrated suburban father has a mid-life crisis after becoming infatuated with his daughter's best friend."
+      "Critic": 88,
+      "Audience": 84,
+      "BoxOffice": "130,096,601",
+      "Production": "Dream Works"
    },
    {
       "Index": 63,
@@ -1062,13 +1000,12 @@
       "Genre": "Action",
       "Director": "Christopher Nolan",
       "Country": "UK, USA",
-      "Oscars Won": "0",
+      "OscarsWon": "0",
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTk4ODQzNDY3Ml5BMl5BanBnXkFtZTcwODA0NTM4Nw@@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 87,
-      "Audience (imdbRating)": 85,
-      "BoxOffice (US Gross)": "448,130,642",
-      "Production": "Warner Bros. Pictures",
-      "Plot Summary": "Eight years after the Joker's reign of anarchy, the Dark Knight, with the help of the enigmatic Selina, is forced from his imposed exile to save Gotham City, now on the edge of total annihilation, from the brutal guerrilla terrorist Bane."
+      "Critic": 87,
+      "Audience": 85,
+      "BoxOffice": "448,130,642",
+      "Production": "Warner Bros. Pictures"
    },
    {
       "Index": 64,
@@ -1079,13 +1016,12 @@
       "Genre": "Animation",
       "Director": "Hayao Miyazaki",
       "Country": "Japan",
-      "Oscars Won": "0",
+      "OscarsWon": "0",
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTVlNWM4NTAtNDQxYi00YWU5LWIwM2MtZmVjYWFmODZiODE5XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 92,
-      "Audience (imdbRating)": 84,
-      "BoxOffice (US Gross)": "2,375,308",
-      "Production": "Miramax Films",
-      "Plot Summary": "On a journey to find the cure for a Tatarigami's curse, Ashitaka finds himself in the middle of a war between the forest gods and Tatara, a mining colony. In this quest he also meets San, the Mononoke Hime."
+      "Critic": 92,
+      "Audience": 84,
+      "BoxOffice": "2,375,308",
+      "Production": "Miramax Films"
    },
    {
       "Index": 65,
@@ -1096,13 +1032,12 @@
       "Genre": "Sci-Fi",
       "Director": "James Cameron",
       "Country": "USA, UK",
-      "Oscars Won": 2,
+      "OscarsWon": 2,
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BYzVlMWViZGEtYjEyYy00YWZmLThmZGEtYmM4MDZlN2Q5MmRmXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 98,
-      "Audience (imdbRating)": 84,
-      "BoxOffice (US Gross)": "85,160,248",
-      "Production": "20th Century Fox Film Corporat",
-      "Plot Summary": "The moon from Alien (1979) has been colonized, but contact is lost. This time, the rescue team has impressive firepower, but will it be enough?"
+      "Critic": 98,
+      "Audience": 84,
+      "BoxOffice": "85,160,248",
+      "Production": "20th Century Fox Film Corporat"
    },
    {
       "Index": 66,
@@ -1113,13 +1048,12 @@
       "Genre": "Drama",
       "Director": "Chan-wook Park",
       "Country": "South Korea",
-      "Oscars Won": "0",
+      "OscarsWon": "0",
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTI3NTQyMzU5M15BMl5BanBnXkFtZTcwMTM2MjgyMQ@@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 80,
-      "Audience (imdbRating)": 84,
-      "BoxOffice (US Gross)": "637,778",
-      "Production": "Tartan Films",
-      "Plot Summary": "After being kidnapped and imprisoned for fifteen years, Oh Dae-Su is released, only to find that he must find his captor in five days."
+      "Critic": 80,
+      "Audience": 84,
+      "BoxOffice": "637,778",
+      "Production": "Tartan Films"
    },
    {
       "Index": 67,
@@ -1130,13 +1064,12 @@
       "Genre": "Crime",
       "Director": "Sergio Leone",
       "Country": "Italy, USA",
-      "Oscars Won": "0",
+      "OscarsWon": "0",
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMGFkNWI4MTMtNGQ0OC00MWVmLTk3MTktOGYxN2Y2YWVkZWE2XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 86,
-      "Audience (imdbRating)": 84,
-      "BoxOffice (US Gross)": "5,321,508",
-      "Production": "Warner Home Video",
-      "Plot Summary": "A former Prohibition-era Jewish gangster returns to the Lower East Side of Manhattan over thirty years later, where he once again must confront the ghosts and regrets of his old life."
+      "Critic": 86,
+      "Audience": 84,
+      "BoxOffice": "5,321,508",
+      "Production": "Warner Home Video"
    },
    {
       "Index": 68,
@@ -1147,13 +1080,12 @@
       "Genre": "Crime",
       "Director": "Billy Wilder",
       "Country": "USA",
-      "Oscars Won": "0",
+      "OscarsWon": "0",
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTc0MjgyNTUyNF5BMl5BanBnXkFtZTcwNDQzMDg0Nw@@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 100,
-      "Audience (imdbRating)": 84,
-      "BoxOffice (US Gross)": "9,000,000",
-      "Production": "MGM",
-      "Plot Summary": "A veteran British barrister must defend his client in a murder trial that has surprise after surprise."
+      "Critic": 100,
+      "Audience": 84,
+      "BoxOffice": "9,000,000",
+      "Production": "MGM"
    },
    {
       "Index": 69,
@@ -1164,13 +1096,12 @@
       "Genre": "Adventure",
       "Director": "Wolfgang Petersen",
       "Country": "West Germany",
-      "Oscars Won": "0",
+      "OscarsWon": "0",
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BNGRmOWY0MGUtNTVhMy00NzRlLTljNDAtNTBiNTRlODgxNmY2XkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 98,
-      "Audience (imdbRating)": 84,
-      "BoxOffice (US Gross)": "11,487,676",
-      "Production": "Columbia Pictures",
-      "Plot Summary": "The claustrophobic world of a WWII German U-boat; boredom, filth, and sheer terror."
+      "Critic": 98,
+      "Audience": 84,
+      "BoxOffice": "11,487,676",
+      "Production": "Columbia Pictures"
    },
    {
       "Index": 70,
@@ -1181,13 +1112,12 @@
       "Genre": "Drama",
       "Director": "Orson Welles",
       "Country": "USA",
-      "Oscars Won": 1,
+      "OscarsWon": 1,
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTQ2Mjc1MDQwMl5BMl5BanBnXkFtZTcwNzUyOTUyMg@@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 100,
-      "Audience (imdbRating)": 84,
-      "BoxOffice (US Gross)": "1,585,634",
-      "Production": "RKO Radio Pictures",
-      "Plot Summary": "Following the death of a publishing tycoon, news reporters scramble to discover the meaning of his final utterance."
+      "Critic": 100,
+      "Audience": 84,
+      "BoxOffice": "1,585,634",
+      "Production": "RKO Radio Pictures"
    },
    {
       "Index": 71,
@@ -1198,13 +1128,12 @@
       "Genre": "Action",
       "Director": "Nitesh Tiwari",
       "Country": "India",
-      "Oscars Won": "0",
+      "OscarsWon": "0",
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTQ4MzQzMzM2Nl5BMl5BanBnXkFtZTgwMTQ1NzU3MDI@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 92,
-      "Audience (imdbRating)": 87,
-      "BoxOffice (US Gross)": "12,382,287",
-      "Production": "Aamir Khan Productions",
-      "Plot Summary": "Former wrestler Mahavir Singh Phogat and his two wrestler daughters struggle towards glory at the Commonwealth Games in the face of societal oppression."
+      "Critic": 92,
+      "Audience": 87,
+      "BoxOffice": "12,382,287",
+      "Production": "Aamir Khan Productions"
    },
    {
       "Index": 72,
@@ -1215,13 +1144,12 @@
       "Genre": "Action",
       "Director": "Alfred Hitchcock",
       "Country": "USA",
-      "Oscars Won": "0",
+      "OscarsWon": "0",
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjQwMTQ0MzgwNl5BMl5BanBnXkFtZTgwNjc4ODE4MzE@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 100,
-      "Audience (imdbRating)": 84,
-      "BoxOffice (US Gross)": "13,275,000",
-      "Production": "Turner Entertainment",
-      "Plot Summary": "A hapless New York advertising executive is mistaken for a government agent by a group of foreign spies, and is pursued across the country while he looks for a way to survive."
+      "Critic": 100,
+      "Audience": 84,
+      "BoxOffice": "13,275,000",
+      "Production": "Turner Entertainment"
    },
    {
       "Index": 73,
@@ -1232,13 +1160,12 @@
       "Genre": "Mystery",
       "Director": "Alfred Hitchcock",
       "Country": "USA",
-      "Oscars Won": "0",
+      "OscarsWon": "0",
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BYTE4ODEwZDUtNDFjOC00NjAxLWEzYTQtYTI1NGVmZmFlNjdiL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 95,
-      "Audience (imdbRating)": 84,
-      "BoxOffice (US Gross)": "3,200,000",
-      "Production": "Paramount Pictures",
-      "Plot Summary": "A San Francisco detective suffering from acrophobia investigates the strange activities of an old friend's wife, all the while becoming dangerously obsessed with her."
+      "Critic": 95,
+      "Audience": 84,
+      "BoxOffice": "3,200,000",
+      "Production": "Paramount Pictures"
    },
    {
       "Index": 74,
@@ -1249,13 +1176,12 @@
       "Genre": "Action",
       "Director": "Richard Marquand",
       "Country": "USA",
-      "Oscars Won": "0",
+      "OscarsWon": "0",
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BODllZjg2YjUtNWEzNy00ZGY2LTgyZmQtYTkxNDYyOWM3OTUyXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 80,
-      "Audience (imdbRating)": 84,
-      "BoxOffice (US Gross)": "309,125,409",
-      "Production": "Twentieth Century Fox",
-      "Plot Summary": "After a daring mission to rescue Han Solo from Jabba the Hutt, the rebels dispatch to Endor to destroy a more powerful Death Star. Meanwhile, Luke struggles to help Vader back from the dark side without falling into the Emperor's trap."
+      "Critic": 80,
+      "Audience": 84,
+      "BoxOffice": "309,125,409",
+      "Production": "Twentieth Century Fox"
    },
    {
       "Index": 75,
@@ -1266,13 +1192,12 @@
       "Genre": "Crime",
       "Director": "Quentin Tarantino",
       "Country": "USA",
-      "Oscars Won": "0",
+      "OscarsWon": "0",
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BZmExNmEwYWItYmQzOS00YjA5LTk2MjktZjEyZDE1Y2QxNjA1XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 91,
-      "Audience (imdbRating)": 83,
-      "BoxOffice (US Gross)": "2,832,029",
-      "Production": "Miramax Films",
-      "Plot Summary": "After a simple jewelry heist goes terribly wrong, the surviving criminals begin to suspect that one of them is a police informant."
+      "Critic": 91,
+      "Audience": 83,
+      "BoxOffice": "2,832,029",
+      "Production": "Miramax Films"
    },
    {
       "Index": 76,
@@ -1283,13 +1208,12 @@
       "Genre": "Biography",
       "Director": "Mel Gibson",
       "Country": "USA",
-      "Oscars Won": 5,
+      "OscarsWon": 5,
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BODg4NzA0MTktOGU5ZS00ODlkLWE3ZmQtYjAzNjNmM2E3NmEzL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 77,
-      "Audience (imdbRating)": 84,
-      "BoxOffice (US Gross)": "75,600,000",
-      "Production": "Paramount Pictures",
-      "Plot Summary": "When his secret bride is executed for assaulting an English soldier who tried to rape her, Sir William Wallace begins a revolt against King Edward I of England."
+      "Critic": 77,
+      "Audience": 84,
+      "BoxOffice": "75,600,000",
+      "Production": "Paramount Pictures"
    },
    {
       "Index": 77,
@@ -1300,13 +1224,12 @@
       "Genre": "Crime",
       "Director": "Fritz Lang",
       "Country": "Germany",
-      "Oscars Won": "0",
+      "OscarsWon": "0",
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BZjIwMTM0ZDEtMTdiMy00NmQ0LWJmYmMtNGJmNmMzZmJlZjVkXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 100,
-      "Audience (imdbRating)": 84,
-      "BoxOffice (US Gross)": "17,599",
-      "Production": "Foremco",
-      "Plot Summary": "When the police in a German city are unable to catch a child-murderer, other criminals join in the manhunt."
+      "Critic": 100,
+      "Audience": 84,
+      "BoxOffice": "17,599",
+      "Production": "Foremco"
    },
    {
       "Index": 78,
@@ -1317,13 +1240,12 @@
       "Genre": "Drama",
       "Director": "Darren Aronofsky",
       "Country": "USA",
-      "Oscars Won": "0",
+      "OscarsWon": "0",
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BOTdiNzJlOWUtNWMwNS00NmFlLWI0YTEtZmI3YjIzZWUyY2Y3XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 78,
-      "Audience (imdbRating)": 84,
-      "BoxOffice (US Gross)": "2,546,851",
-      "Production": "Artisan Entertainment",
-      "Plot Summary": "The drug-induced utopias of four Coney Island people are shattered when their addictions run deep."
+      "Critic": 78,
+      "Audience": 84,
+      "BoxOffice": "2,546,851",
+      "Production": "Artisan Entertainment"
    },
    {
       "Index": 79,
@@ -1334,13 +1256,12 @@
       "Genre": "Comedy",
       "Director": "Jean-Pierre Jeunet",
       "Country": "France, Germany",
-      "Oscars Won": "0",
+      "OscarsWon": "0",
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTA3MjVkMWMtYTQ4ZC00ODczLWFjYmQtMDFkZDQ2Y2M0NDVmXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 89,
-      "Audience (imdbRating)": 84,
-      "BoxOffice (US Gross)": "33,225,499",
-      "Production": "Miramax Films",
-      "Plot Summary": "Amélie is an innocent and naive girl in Paris with her own sense of justice. She decides to help those around her and, along the way, discovers love."
+      "Critic": 89,
+      "Audience": 84,
+      "BoxOffice": "33,225,499",
+      "Production": "Miramax Films"
    },
    {
       "Index": 80,
@@ -1351,13 +1272,12 @@
       "Genre": "Drama",
       "Director": "Aamir Khan, Amole Gupte",
       "Country": "India",
-      "Oscars Won": "0",
+      "OscarsWon": "0",
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BNTVmYTk2NjAtYzY3MS00YjFjLTlkYzktYzg3YzMyZDQyOWRiXkEyXkFqcGdeQXVyNjQ2MjQ5NzM@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 90,
-      "Audience (imdbRating)": 85,
-      "BoxOffice (US Gross)": "1,204,660",
-      "Production": "UTV Communications",
-      "Plot Summary": "An eight-year-old boy is thought to be a lazy trouble-maker, until the new art teacher has the patience and compassion to discover the real problem behind his struggles in school."
+      "Critic": 90,
+      "Audience": 85,
+      "BoxOffice": "1,204,660",
+      "Production": "UTV Communications"
    },
    {
       "Index": 81,
@@ -1368,13 +1288,12 @@
       "Genre": "Crime",
       "Director": "Stanley Kubrick",
       "Country": "UK, USA",
-      "Oscars Won": "0",
+      "OscarsWon": "0",
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTY3MjM1Mzc4N15BMl5BanBnXkFtZTgwODM0NzAxMDE@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 89,
-      "Audience (imdbRating)": 83,
-      "BoxOffice (US Gross)": "26,589,355",
-      "Production": "Warner Bros.",
-      "Plot Summary": "In future Britain, Alex DeLarge, a charismatic and psycopath delinquent, who likes to practice crimes and ultra-violence with his gang, is jailed and volunteers for an experimental aversion therapy developed by the government in an effort to solve society's crime problem - but not all goes according to plan."
+      "Critic": 89,
+      "Audience": 83,
+      "BoxOffice": "26,589,355",
+      "Production": "Warner Bros."
    },
    {
       "Index": 82,
@@ -1385,13 +1304,12 @@
       "Genre": "Adventure",
       "Director": "David Lean",
       "Country": "UK, USA",
-      "Oscars Won": 7,
+      "OscarsWon": 7,
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BYWY5ZjhjNGYtZmI2Ny00ODM0LWFkNzgtZmI1YzA2N2MxMzA0XkEyXkFqcGdeQXVyNjUwNzk3NDc@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 98,
-      "Audience (imdbRating)": 83,
-      "BoxOffice (US Gross)": "44,824,144",
-      "Production": "Columbia Pictures",
-      "Plot Summary": "The story of T.E. Lawrence, the English officer who successfully united and led the diverse, often warring, Arab tribes during World War I in order to fight the Turks."
+      "Critic": 98,
+      "Audience": 83,
+      "BoxOffice": "44,824,144",
+      "Production": "Columbia Pictures"
    },
    {
       "Index": 83,
@@ -1402,13 +1320,12 @@
       "Genre": "Crime",
       "Director": "Martin Scorsese",
       "Country": "USA",
-      "Oscars Won": "0",
+      "OscarsWon": "0",
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BNGQxNDgzZWQtZTNjNi00M2RkLWExZmEtNmE1NjEyZDEwMzA5XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 98,
-      "Audience (imdbRating)": 83,
-      "BoxOffice (US Gross)": "28,262,574",
-      "Production": "Columbia Pictures",
-      "Plot Summary": "A mentally unstable Vietnam War veteran works as a night-time taxi driver in New York City where the perceived decadence and sleaze feeds his urge for violent action, while attempting to save a preadolescent prostitute in the process."
+      "Critic": 98,
+      "Audience": 83,
+      "BoxOffice": "28,262,574",
+      "Production": "Columbia Pictures"
    },
    {
       "Index": 84,
@@ -1419,13 +1336,12 @@
       "Genre": "Crime",
       "Director": "Billy Wilder",
       "Country": "USA",
-      "Oscars Won": "0",
+      "OscarsWon": "0",
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BZmRmYmZkZTktZDc5ZC00ZjZmLTg4NWMtYjM3MjcyNTVjNGQ5L2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 96,
-      "Audience (imdbRating)": 83,
-      "BoxOffice (US Gross)": "5,720,000",
-      "Production": "Paramount Pictures",
-      "Plot Summary": "An insurance representative lets himself be talked into a murder/insurance fraud scheme that arouses an insurance investigator's suspicions."
+      "Critic": 96,
+      "Audience": 83,
+      "BoxOffice": "5,720,000",
+      "Production": "Paramount Pictures"
    },
    {
       "Index": 85,
@@ -1436,13 +1352,12 @@
       "Genre": "Drama",
       "Director": "Michel Gondry",
       "Country": "USA",
-      "Oscars Won": 1,
+      "OscarsWon": 1,
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTY4NzcwODg3Nl5BMl5BanBnXkFtZTcwNTEwOTMyMw@@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 93,
-      "Audience (imdbRating)": 83,
-      "BoxOffice (US Gross)": "34,126,138",
-      "Production": "Focus Features",
-      "Plot Summary": "When their relationship turns sour, a couple undergoes a procedure to have each other erased from their memories. But it is only through the process of loss that they discover what they had to begin with."
+      "Critic": 93,
+      "Audience": 83,
+      "BoxOffice": "34,126,138",
+      "Production": "Focus Features"
    },
    {
       "Index": 86,
@@ -1453,13 +1368,12 @@
       "Genre": "Biography",
       "Director": "Milos Forman",
       "Country": "USA, France",
-      "Oscars Won": 8,
+      "OscarsWon": 8,
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTg5NDkwMTk5N15BMl5BanBnXkFtZTYwODg3MDk2._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 95,
-      "Audience (imdbRating)": 83,
-      "BoxOffice (US Gross)": "51,974,029",
-      "Production": "Warner Bros. Pictures",
-      "Plot Summary": "The incredible story of Wolfgang Amadeus Mozart, told by his peer and secret rival Antonio Salieri - now confined to an insane asylum."
+      "Critic": 95,
+      "Audience": 83,
+      "BoxOffice": "51,974,029",
+      "Production": "Warner Bros. Pictures"
    },
    {
       "Index": 87,
@@ -1470,13 +1384,12 @@
       "Genre": "Crime",
       "Director": "Robert Mulligan",
       "Country": "USA",
-      "Oscars Won": 3,
+      "OscarsWon": 3,
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BN2YxZDUxYzMtYzQxNy00NTRjLThmZjQtY2Q4Njg2MTUyOTkzL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 91,
-      "Audience (imdbRating)": 83,
-      "BoxOffice (US Gross)": "13,129,846",
-      "Production": "Universal International Pictur",
-      "Plot Summary": "Atticus Finch, a lawyer in the Depression-era South, defends a black man against an undeserved rape charge, and his children against prejudice."
+      "Critic": 91,
+      "Audience": 83,
+      "BoxOffice": "13,129,846",
+      "Production": "Universal International Pictur"
    },
    {
       "Index": 88,
@@ -1487,13 +1400,12 @@
       "Genre": "Animation",
       "Director": "Lee Unkrich",
       "Country": "USA",
-      "Oscars Won": 2,
+      "OscarsWon": 2,
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTgxOTY4Mjc0MF5BMl5BanBnXkFtZTcwNTA4MDQyMw@@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 99,
-      "Audience (imdbRating)": 83,
-      "BoxOffice (US Gross)": "414,984,497",
-      "Production": "Walt Disney Pictures",
-      "Plot Summary": "The toys are mistakenly delivered to a day-care center instead of the attic right before Andy leaves for college, and it's up to Woody to convince the other toys that they weren't abandoned and to return home."
+      "Critic": 99,
+      "Audience": 83,
+      "BoxOffice": "414,984,497",
+      "Production": "Walt Disney Pictures"
    },
    {
       "Index": 89,
@@ -1504,13 +1416,12 @@
       "Genre": "Drama",
       "Director": "Stanley Kubrick",
       "Country": "UK, USA",
-      "Oscars Won": "0",
+      "OscarsWon": "0",
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BNzc2ZThkOGItZGY5YS00MDYwLTkyOTAtNDRmZWIwMGRhYTc0L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 93,
-      "Audience (imdbRating)": 83,
-      "BoxOffice (US Gross)": "46,375,676",
-      "Production": "Warner Bros.",
-      "Plot Summary": "A pragmatic U.S. Marine observes the dehumanizing effects the Vietnam War has on his fellow recruits from their brutal boot camp training to the bloody street fighting in Hue."
+      "Critic": 93,
+      "Audience": 83,
+      "BoxOffice": "46,375,676",
+      "Production": "Warner Bros."
    },
    {
       "Index": 90,
@@ -1521,13 +1432,12 @@
       "Genre": "Adventure",
       "Director": "Stanley Kubrick",
       "Country": "UK, USA",
-      "Oscars Won": 1,
+      "OscarsWon": 1,
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTZkZTBhYmUtMTIzNy00YTViLTg1OWItNGUwMmVlN2FjZTVkXkEyXkFqcGdeQXVyNDYyMDk5MTU@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 93,
-      "Audience (imdbRating)": 83,
-      "BoxOffice (US Gross)": "135,620",
-      "Production": "Warner Bros. Pictures",
-      "Plot Summary": "Humanity finds a mysterious, obviously artificial object buried beneath the Lunar surface and, with the intelligent computer H.A.L. 9000, sets off on a quest."
+      "Critic": 93,
+      "Audience": 83,
+      "BoxOffice": "135,620",
+      "Production": "Warner Bros. Pictures"
    },
    {
       "Index": 91,
@@ -1538,13 +1448,12 @@
       "Genre": "Comedy",
       "Director": "Stanley Donen, Gene Kelly",
       "Country": "USA",
-      "Oscars Won": "0",
+      "OscarsWon": "0",
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BZDRjNGViMjQtOThlMi00MTA3LThkYzQtNzJkYjBkMGE0YzE1XkEyXkFqcGdeQXVyNDYyMDk5MTU@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 100,
-      "Audience (imdbRating)": 83,
-      "BoxOffice (US Gross)": "8,819,028",
-      "Production": "MGM",
-      "Plot Summary": "A silent film production company and cast make a difficult transition to sound."
+      "Critic": 100,
+      "Audience": 83,
+      "BoxOffice": "8,819,028",
+      "Production": "MGM"
    },
    {
       "Index": 92,
@@ -1555,13 +1464,12 @@
       "Genre": "Animation",
       "Director": "Makoto Shinkai",
       "Country": "Japan",
-      "Oscars Won": "0",
+      "OscarsWon": "0",
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BODRmZDVmNzUtZDA4ZC00NjhkLWI2M2UtN2M0ZDIzNDcxYThjL2ltYWdlXkEyXkFqcGdeQXVyNTk0MzMzODA@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 97,
-      "Audience (imdbRating)": 86,
-      "BoxOffice (US Gross)": "4,676,810",
-      "Production": "FUNimation Films",
-      "Plot Summary": "Two strangers find themselves linked in a bizarre way. When a connection forms, will distance be the only thing to keep them apart?"
+      "Critic": 97,
+      "Audience": 86,
+      "BoxOffice": "4,676,810",
+      "Production": "FUNimation Films"
    },
    {
       "Index": 93,
@@ -1572,13 +1480,12 @@
       "Genre": "Comedy",
       "Director": "George Roy Hill",
       "Country": "USA",
-      "Oscars Won": 7,
+      "OscarsWon": 7,
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTY5MjM1OTAyOV5BMl5BanBnXkFtZTgwMDkwODg4MDE@._V1._CR52,57,915,1388_SX89_AL_.jpg_V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 93,
-      "Audience (imdbRating)": 83,
-      "BoxOffice (US Gross)": "159,600,000",
-      "Production": "Universal Pictures",
-      "Plot Summary": "In Chicago in September 1936, a young con man seeking revenge for his murdered partner teams up with a master of the big con to win a fortune from a criminal banker."
+      "Critic": 93,
+      "Audience": 83,
+      "BoxOffice": "159,600,000",
+      "Production": "Universal Pictures"
    },
    {
       "Index": 94,
@@ -1589,13 +1496,12 @@
       "Genre": "Animation",
       "Director": "John Lasseter",
       "Country": "USA",
-      "Oscars Won": "0",
+      "OscarsWon": "0",
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMDU2ZWJlMjktMTRhMy00ZTA5LWEzNDgtYmNmZTEwZTViZWJkXkEyXkFqcGdeQXVyNDQ2OTk4MzI@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 100,
-      "Audience (imdbRating)": 83,
-      "BoxOffice (US Gross)": "191,796,233",
-      "Production": "Buena Vista",
-      "Plot Summary": "A cowboy doll is profoundly threatened and jealous when a new spaceman figure supplants him as top toy in a boy's room."
+      "Critic": 100,
+      "Audience": 83,
+      "BoxOffice": "191,796,233",
+      "Production": "Buena Vista"
    },
    {
       "Index": 95,
@@ -1606,13 +1512,12 @@
       "Genre": "Drama",
       "Director": "Vittorio De Sica",
       "Country": "Italy",
-      "Oscars Won": "0",
+      "OscarsWon": "0",
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BOTI3NTcwNzEtNDA1MS00ZjE0LThkNDEtMmU4MjVmNTQ1ZDBmXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 98,
-      "Audience (imdbRating)": 83,
-      "BoxOffice (US Gross)": "332,930",
-      "Production": "ENIC",
-      "Plot Summary": "In post-war Italy, a working-class man's bicycle is stolen. He and his son set out to find it."
+      "Critic": 98,
+      "Audience": 83,
+      "BoxOffice": "332,930",
+      "Production": "ENIC"
    },
    {
       "Index": 96,
@@ -1623,13 +1528,12 @@
       "Genre": "Comedy",
       "Director": "Charles Chaplin",
       "Country": "USA",
-      "Oscars Won": "0",
+      "OscarsWon": "0",
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BZjhhMThhNDItNTY2MC00MmU1LTliNDEtNDdhZjdlNTY5ZDQ1XkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 100,
-      "Audience (imdbRating)": 83,
-      "BoxOffice (US Gross)": "5,450,000",
-      "Production": "First National Pictures Inc.",
-      "Plot Summary": "The Tramp cares for an abandoned child, but events put that relationship in jeopardy."
+      "Critic": 100,
+      "Audience": 83,
+      "BoxOffice": "5,450,000",
+      "Production": "First National Pictures Inc."
    },
    {
       "Index": 97,
@@ -1640,13 +1544,12 @@
       "Genre": "Adventure",
       "Director": "Quentin Tarantino, Eli Roth",
       "Country": "USA, Germany",
-      "Oscars Won": 1,
+      "OscarsWon": 1,
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BOTJiNDEzOWYtMTVjOC00ZjlmLWE0NGMtZmE1OWVmZDQ2OWJhXkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 88,
-      "Audience (imdbRating)": 83,
-      "BoxOffice (US Gross)": "120,523,073",
-      "Production": "The Weinstein Company",
-      "Plot Summary": "In Nazi-occupied France during World War II, a plan to assassinate Nazi leaders by a group of Jewish U.S. soldiers coincides with a theatre owner's vengeful plans for the same."
+      "Critic": 88,
+      "Audience": 83,
+      "BoxOffice": "120,523,073",
+      "Production": "The Weinstein Company"
    },
    {
       "Index": 98,
@@ -1657,13 +1560,12 @@
       "Genre": "Adventure",
       "Director": "Rajkumar Hirani",
       "Country": "India",
-      "Oscars Won": "0",
+      "OscarsWon": "0",
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BZWRlNDdkNzItMzhlZC00YTdmLWIwNjktYjY5NjQ1ZmQ3N2FkXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 100,
-      "Audience (imdbRating)": 84,
-      "BoxOffice (US Gross)": "6,500,000",
-      "Production": "Big Pictures",
-      "Plot Summary": "Two friends are searching for their long lost companion. They revisit their college days and recall the memories of their friend who inspired them to think differently, even as the rest of the world called them \"idiots\"."
+      "Critic": 100,
+      "Audience": 84,
+      "BoxOffice": "6,500,000",
+      "Production": "Big Pictures"
    },
    {
       "Index": 99,
@@ -1674,13 +1576,12 @@
       "Genre": "Comedy",
       "Director": "Guy Ritchie",
       "Country": "UK, USA",
-      "Oscars Won": "0",
+      "OscarsWon": "0",
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTA2NDYxOGYtYjU1Mi00Y2QzLTgxMTQtMWI1MGI0ZGQ5MmU4XkEyXkFqcGdeQXVyNDk3NzU2MTQ@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 73,
-      "Audience (imdbRating)": 83,
-      "BoxOffice (US Gross)": "30,093,107",
-      "Production": "Columbia Pictures",
-      "Plot Summary": "Unscrupulous boxing promoters, violent bookmakers, a Russian gangster, incompetent amateur robbers, and supposedly Jewish jewelers fight to track down a priceless stolen diamond."
+      "Critic": 73,
+      "Audience": 83,
+      "BoxOffice": "30,093,107",
+      "Production": "Columbia Pictures"
    },
    {
       "Index": 100,
@@ -1691,12 +1592,11 @@
       "Genre": "Adventure",
       "Director": "Terry Gilliam, Terry Jones",
       "Country": "UK",
-      "Oscars Won": "0",
+      "OscarsWon": "0",
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BNmNmZjViNTQtNDQ5Mi00MDYzLWI5YWMtNDUyZGNmMGZhNDg4XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SX300.jpg",
-      "Critic (RottenTomatoes)": 97,
-      "Audience (imdbRating)": 83,
-      "BoxOffice (US Gross)": "1,229,197",
-      "Production": "Almi Cinema 5",
-      "Plot Summary": "King Arthur and his knights embark on a low-budget search for the Grail, encountering many, very silly obstacles."
+      "Critic": 97,
+      "Audience": 83,
+      "BoxOffice": "1,229,197",
+      "Production": "Almi Cinema 5"
    }
 ]
