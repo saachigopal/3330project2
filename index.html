@@ -22,23 +22,101 @@ header {
 path {
   stroke: #fff;
 }
+.loader{
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid grey;
+  border-right: 16px solid #3498db;
+  border-bottom: 16px solid grey;
+  border-left: 16px solid grey;
+  width: 310px;
+  height: 310px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
 
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+#summaryGenre,#summaryYear,#summaryRating,#percentage{
+  position:absolute;
+  left:540px;
+  width: 180px;
+  text-align: center;
+}
+#summaryGenre{
+  top:400px;
+}
+#summaryYear{
+  top:425px;
+}
+#summaryRating{
+  top:450px;
+}
+#percentage{
+  top:475px;
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+
+} 
 
 </style>
 
 <body>
-  <header><h1 >
-    Movie Generator 
+  <header><h1 id="steps">
+    Select a Genre 
   </h1>
   </header>
+  <div class="container" id="summaryGenre"></div>
+  <div class="container" id="summaryYear"></div>
+  <div class="container" id="summaryRating"></div>
+  <div class="container" id="percentage"></div>
+  <!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div id="modalcontent" class="modal-content">
+    <p>Recommended Movie For You...</p>
+  </div>
+
+</div>
 <script>
 
 d3.json("movies.json", function (error, data) {
   movieData = data;
-  function filterMovie(genre,yearStart,yearEnd,rating){
+  function filterGenre(genre){
     var genrelist=genre.split("/");
-    var ratinglist=rating.split("/");
-    var genres; var ratings;
+    var genres; 
     if(genrelist.length>2){
       genres=movieData.filter(function(d){ 
         return d.Genre==genrelist[0] || d.Genre==genrelist[1] || d.Genre==genrelist[2]});    
@@ -48,7 +126,14 @@ d3.json("movies.json", function (error, data) {
     }else{
       genres=movieData.filter(function(d){ return d.Genre==genre});
     }
+    return genres;
+
+  }
+  function filterMovie(genre,yearStart,yearEnd,rating){
     
+    var ratinglist=rating.split("/");
+    var ratings;
+    var genres=filterGenre(genre);
     var year=genres.filter(function(d){ return d.Year>=yearStart && d.Year<=yearEnd });
     if(ratinglist.length>1){
        ratings=year.filter(function(d){ 
@@ -177,7 +262,7 @@ var svg = d3.select("body").append("svg")
     .attr("height", height)
   .append("g")
     .attr("transform", "translate(" + (width/1.55)  + "," + (height / 2) + ")");
-  
+  //Create Sunburst
   root = d3.hierarchy(nodeData);
   root.sum(function(d) { return d.size; });
   svg.selectAll("path")
@@ -187,36 +272,43 @@ var svg = d3.select("body").append("svg")
       .style("fill", function(d) { return color((d.children ? d : d.parent).data.name); })
     .on("mouseover",mouseover)
     .on("mouseout", mouseout)
+    .on("click", handleClick)
    
     function mouseover(d){
       svg.selectAll("text").remove();
-      var parent_name="";
+      var parent_name=d.data.name;
       var current=d;
+      var iter=0;
       while(current.parent){
+        iter++;
         parent_name=current.parent.data.name+"->"+parent_name;
         current=current.parent;
       }
       parent_name=parent_name.substring(2,parent_name.length);
-      svg
-      .append("text")
-      .text(parent_name + d.data.name)
-      .attr("x",radius/43)
-      .attr("y", height/43)
-      .attr("text-anchor", "middle")
-      .attr("fill","black")
-      .attr("font-weight","bold");
-      if(d.data.name!=""){
-        svg
-      .append("text")
-      .text(formatNumber(d.value)+ "%")
-      .attr("x",radius/43)
-      .attr("y", (height/43)+25)
-      .attr("text-anchor", "middle")
-      .attr("fill","black")
-      .attr("font-weight",500);
+      var topics=parent_name.split("->");
 
 
+      var name="";
+      if(iter==3){
+        name="Click to Generate Movie";
+        document.getElementById("summaryGenre").innerHTML = topics[0];
+        document.getElementById("summaryYear").innerHTML = topics[1];
+        document.getElementById("summaryRating").innerHTML = topics[2];
+      }else if(iter==2){
+        name="Select a Rating"
+        document.getElementById("summaryGenre").innerHTML = topics[0];
+        document.getElementById("summaryYear").innerHTML = topics[1];
+      }else if(iter==1){
+        name="Select a Year Range"
+        document.getElementById("summaryGenre").innerHTML = topics[0];
+      }else{
+        name="Select a Genre"
       }
+      if(iter!=0){
+        document.getElementById("percentage").innerHTML = formatNumber(d.value)+ "%";
+      }
+      
+      document.getElementById("steps").innerHTML = name;
       
       var ancestors = getAncestors(d);
       // update sunburst (Fade all the segments and highlight only ancestors of current segment)
@@ -228,11 +320,78 @@ var svg = d3.select("body").append("svg")
       })
       .attr("opacity", 1);
 
+
     }
     function mouseout(d){
       svg.selectAll("text").remove();
       svg.selectAll("path")
       .attr("opacity", 1);
+      document.getElementById("steps").innerHTML = "Select a Genre";
+      document.getElementById("summaryGenre").innerHTML = "";
+      document.getElementById("summaryYear").innerHTML = "";
+      document.getElementById("summaryRating").innerHTML = "";
+      document.getElementById("percentage").innerHTML = "";
+    }
+
+    function handleClick(d){
+      var genre=""; var year=0; var rating="";
+      var topicList=[];
+      var current=d;
+      while(current.parent){
+        topicList.push(current.data.name);
+        current=current.parent;
+      }
+      if(topicList.length==3){
+        rating=topicList[0];
+        year=topicList[1];
+        genre=topicList[2];
+
+
+      }else if(topicList.length==2){
+        year=topicList[0];
+        genre=topicList[1];
+
+      }else if(topicList.length==1){
+        genre=topicList[0];
+
+      }
+      
+      //Create Loader
+      var newDiv = document.createElement("div")
+      newDiv.className="loader";
+      newDiv.id="loadbar"
+      newDiv.style.position="absolute";
+      newDiv.style.left = 1.34*radius+'px';
+      newDiv.style.top = height/2.64+'px';
+      document.body.appendChild(newDiv);
+      var selectedMovie;
+      //Create Delay for Loader
+      setTimeout(function(){
+        //generate movie and create form with movie summary
+        selectedMovie=generateMovie(genre,year,rating);
+        var modal = document.getElementById('myModal');
+        modal.style.display = "block";
+        document.getElementById('modalcontent').innerText=selectedMovie.Title;
+        }, 1200); 
+      
+    }
+
+    function generateMovie(Genre,Year,Rating){
+      var movies=filterGenre(Genre);
+      if(Year!=""){
+        var years=Year.split("-");
+        movies=movies.filter(function(d){return d.Year>=Number(years[0]) && d.Year<=Number(years[1])});
+      }
+      if(Rating !=""){
+        ratings=Rating.split("/")
+        movies=movies.filter(function(d){ 
+       return d.Rated==ratings[0] || d.Rated==ratings[1]});
+
+      }
+      var loader=document.getElementById("loadbar");
+      loader.parentNode.removeChild(loader);
+      return movies[Math.floor(Math.random()*movies.length)];
+
     }
 
     function getAncestors(node) {
