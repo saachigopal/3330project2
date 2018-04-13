@@ -63,12 +63,15 @@ path {
 #percentage{
   top:475px;
 }
+
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
+    top: -50%;
+    /*visibility: hidden;*/
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    padding-top: 5%; /* Location of the box */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -76,6 +79,7 @@ path {
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    transition: all .5s ease-in-out;
 }
 
 /* Modal Content */
@@ -85,10 +89,62 @@ path {
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
+    height:800px;
 }
 
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: -1%;
+}
 
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Movie Poster Details CSS */
+div.poster {
+  display: block;
+  width: 40%;
+  height: 120%;
+  position: relative;
+  float: left;
+  /*z-index: 2; defined in case we need it for stack order*/ 
+}
+
+div.image_content {
+  overflow: visible;
+  width: 20%;
+  height: 40%;
 } 
+
+/* Movie Text Details CSS */
+div.header_poster_wrapper {
+  display: flex;
+  min-height: 120%;
+  /*float: left;*/
+}
+
+div.title {
+  width: 100%;
+  margin-bottom: 3%;
+  font-size: 100px;
+  font-weight: 3px;
+  width:350px; 
+  float:left;
+}
+
+span.release_date {
+  opacity: 0.6;
+  font-size: 1.7em;
+  font-weight: 400;
+}
 
 </style>
 
@@ -102,47 +158,68 @@ path {
   <div class="container" id="summaryRating"></div>
   <div class="container" id="percentage"></div>
   <!-- The Modal -->
-<div id="myModal" class="modal">
+  <div id="myModal" class="modal">
 
-  <!-- Modal content -->
-  <div id="modalcontent" class="modal-content">
-    <p>Recommended Movie For You...</p>
-  </div>
+  <!-- Modal content for movie details-->
+  <!-- <section> -->
+    
+    <div id="modalcontent" class="modal-content">
+      <form class="form-inline">
+      <span class="close">&times;</span>
+      <div class= "poster">
+        <div id="poster_image_content" class= "image_content"></div>
+      </div>
+      <div class= "header_poster_wrapper">
+      <!-- <section> -->
+        <div id="movie_title" class="title"> 
+          <!-- <span> Hello World
+            <span class= "release_date"> (1948)</span>
+          </span> -->
+        </div>
+      <!-- </section> -->
+      </div>
+        </form>
+
+    </div>
+  <!-- </section> -->
 
 </div>
 <script>
+var movieData; //global variable to store json data
 
-d3.json("movies.json", function (error, data) {
-  movieData = data;
-  function filterGenre(genre){
+//Filter the json file based on genre
+function filterGenre(genre){
     var genrelist=genre.split("/");
     var genres; 
     if(genrelist.length>2){
-      genres=movieData.filter(function(d){ 
-        return d.Genre==genrelist[0] || d.Genre==genrelist[1] || d.Genre==genrelist[2]});    
+      genres=movieData.filter(d => d.Genre==genrelist[0] || d.Genre==genrelist[1] || d.Genre==genrelist[2]);
     }else if(genrelist.length>1){
-       genres=movieData.filter(function(d){ 
-        return d.Genre==genrelist[0] || d.Genre==genrelist[1]});
+       genres=movieData.filter(d => d.Genre==genrelist[0] || d.Genre==genrelist[1]);
     }else{
-      genres=movieData.filter(function(d){ return d.Genre==genre});
+      genres=movieData.filter(d => d.Genre==genre);
     }
     return genres;
 
   }
+
+//Filter the movies
   function filterMovie(genre,yearStart,yearEnd,rating){
-    
     var ratinglist=rating.split("/");
     var ratings;
     var genres=filterGenre(genre);
-    var year=genres.filter(function(d){ return d.Year>=yearStart && d.Year<=yearEnd });
+    var year=genres.filter(d => d.Year>=yearStart && d.Year<=yearEnd);
     if(ratinglist.length>1){
-       ratings=year.filter(function(d){ 
-       return d.Rated==ratinglist[0] || d.Rated==ratinglist[1]});
+       ratings=year.filter(d => d.Rated==ratinglist[0] || d.Rated==ratinglist[1]);
     }else{
-      ratings=year.filter(function(d){ return d.Rated==rating});
+      ratings=year.filter(d => d.Rated==rating);
     }
     return ratings.length;
   }
+
+//Load the json file and parse it
+d3.json("movies.json", function (error, data) {
+  movieData = data;
+  
   var nodeData = {
         "name": "", "children": [{
             "name": "Crime","children": [{
@@ -233,6 +310,7 @@ d3.json("movies.json", function (error, data) {
                 "name":"R", "size":filterMovie("Horror/Mystery/Sci-Fi",1991,2016,"R")}]}]
         }]
   };
+
 var width = 960,
     height = 700,
     radius = (Math.min(width, height) / 2) - 10;
@@ -250,11 +328,10 @@ var color = d3.scaleOrdinal(d3.schemeCategory20);
 var partition = d3.partition();
 
 var arc = d3.arc()
-    .startAngle(function(d) { return Math.max(0, Math.min(2 * Math.PI, x(d.x0))); })
-    .endAngle(function(d) { return Math.max(0, Math.min(2 * Math.PI, x(d.x1))); })
-    .innerRadius(function(d) { return Math.max(0, y(d.y0)); })
-    .outerRadius(function(d) { return Math.max(0, y(d.y1)); });
-
+    .startAngle(d => Math.max(0, Math.min(2 * Math.PI, x(d.x0))))
+    .endAngle(d => Math.max(0, Math.min(2 * Math.PI, x(d.x1))))
+    .innerRadius(d => Math.max(0, y(d.y0)))
+    .outerRadius(d => Math.max(0, y(d.y1)));
 
 var svg = d3.select("body").append("svg")
     .attr("id","sunburst")
@@ -319,9 +396,8 @@ var svg = d3.select("body").append("svg")
         return (ancestors.indexOf(node) >= 0);
       })
       .attr("opacity", 1);
-
-
     }
+
     function mouseout(d){
       svg.selectAll("text").remove();
       svg.selectAll("path")
@@ -367,15 +443,35 @@ var svg = d3.select("body").append("svg")
       var selectedMovie;
       //Create Delay for Loader
       setTimeout(function(){
-        //generate movie and create form with movie summary
+        //Generate movie and create form with movie summary
         selectedMovie=generateMovie(genre,year,rating);
+        console.log(selectedMovie);
+        
+        //Display the modal
         var modal = document.getElementById('myModal');
         modal.style.display = "block";
-        document.getElementById('modalcontent').innerText=selectedMovie.Title;
+        // modal.style.visibility = "visible";
+
+        //Fill in the content
+        d3.select("#poster_image_content").append("img")
+        .attr("id","poster_img")
+        .attr("alt",selectedMovie.Title)
+        .attr("class","poster")
+        .attr("src",selectedMovie.Poster);
+
+        var movieTitle = d3.select("#movie_title").append("span")
+        .attr("id","movie_title")
+        .text(selectedMovie.Title);
+
+        movieTitle.append("span")
+        .attr("id","release_date")
+        .attr("class","release_date")
+        .text(" ("+selectedMovie.Year+")");
         }, 1200); 
       
     }
 
+    // Function used to generate movie suggestion based on inputs
     function generateMovie(Genre,Year,Rating){
       var movies=filterGenre(Genre);
       if(Year!=""){
@@ -404,11 +500,35 @@ var svg = d3.select("body").append("svg")
     }
     return path;
   }
+});
 
 
-})
+// Code for closing the modal. Model will close if the x is clicked or anywhere outside of the modal is clicked. 
+// Credits: this functionality was based off the modal tutorial on w3schools.
+// Get the modal and get the <span> element that closes the modal
+var modal = document.getElementById('myModal');
+var closeModal = document.getElementsByClassName("close")[0];
 
+//Remove the added modal content
+function removeModalContent () {
+  d3.select("#poster_img").remove();
+}
 
+// When the user clicks on <span> (x), close the modal
+closeModal.onclick = function() {
+    modal.style.display = "none";
+    // modal.style.visibility = "hidden";
+    removeModalContent();
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+        // modal.style.visibility = "hidden";
+        removeModalContent();
+    }
+  }
 
 </script>
 
