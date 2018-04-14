@@ -134,7 +134,6 @@ div.plot_summary {
   width: 100%;
   /*height: 20%;*/
 }
-
 div.title_labels {
   font-size: 20px;
   font-weight: bold;
@@ -465,7 +464,6 @@ var svg = d3.select("#sunburst").append("svg")
         d3.select("#director").text(selectedMovie.Director);
         d3.select("#production_company").text(selectedMovie.Production);
         d3.select("#box_office").text(selectedMovie["BoxOffice (US Gross)"]);
-
         d3.select("#plot_summary").text(selectedMovie.Plot);
       }, 1200); 
       
@@ -558,8 +556,8 @@ function showGraph() {
         .style("font-size","16");
     for (var i=0; i < filmstats.length; i++) {
         svg2.append("circle")
-        .attr("cx", 50+xscale(filmstats[i].BoxOffice/1000000))
-        .attr("cy", 10+yscale(filmstats[i].OscarsWon))
+        .attr("cx", 50+xscale(Number(filmstats[i]["BoxOffice (US Gross)"].replace(/[, ]+/g, ""))/1000000))
+        .attr("cy", 10+yscale(filmstats[i]["Oscars Won"]))
         .attr("r", 10)
         .attr("fill", d=>color(i))
         .attr("fill-opacity", "0.5")
@@ -574,17 +572,15 @@ document.getElementById("plot").appendChild(comedy);
 comedy.addEventListener("click", function() { 
     var ComAni = filmstats.filter(d => (d.Genre == "Comedy" || d.Genre == "Animation")); 
     console.log(ComAni);
-    d3.select("svg2").selectAll("circles").remove();
+    //d3.select("svg2").selectAll("circles").remove();
     d3.select("svg2").selectAll("circles").data(ComAni).enter()
         .append("circle")
         
 });
-
 var drama = document.createElement("button");
 var t1 = document.createTextNode("Drama/Biography");
 drama.append(t1);
 document.getElementById("plot").appendChild(drama);
-
 drama.addEventListener("click", function() {
     var DramBio = filmstats.filter(d => (d.Genre == "Drama" || d.Genre == "Biography"));
     console.log(DramBio);
@@ -605,12 +601,21 @@ var crime = document.createElement("button");
 var t3 = document.createTextNode("Crime");
 crime.append(t3);
 document.getElementById("plot").appendChild(crime);
-
+    
+crime.addEventListener("click", function() {
+    var cri = filmstats.filter(d => d.Genre == "Crime");
+    console.log(cri);
+});
+    
 var horror = document.createElement("button");
 var t4 = document.createTextNode("Horror/Mystery/Sci-Fi");
 horror.append(t4);
 document.getElementById("plot").appendChild(horror);   
     
+horror.addEventListener("click", function() {
+    var hms = filmstats.filter(d => d.Genre == "Horror" || d.Genre == "Mystery" || d.Genre == "Sci-Fi");
+    console.log(hms);
+});
 </script>    
     
 
