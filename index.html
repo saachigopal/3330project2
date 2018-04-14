@@ -65,9 +65,9 @@ path {
 }
 
 /* The Modal (background) */
-.modal {
+.overlay {
     display: none; /* Hidden by default */
-    top: -50%;
+    /*top: -50%;*/
     /*visibility: hidden;*/
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
@@ -79,26 +79,72 @@ path {
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    transition: all .5s ease-in-out;
+    /*transition: all .5s ease-in-out;*/
 }
 
 /* Modal Content */
-.modal-content {
+.popup {
     background-color: #fefefe;
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
-    height:800px;
+    height: 100%;
+    position: relative;
+}
+
+/* Movie Poster Details CSS */
+div.poster {
+  display: block;
+  width: 37%;
+  height: 70%;
+  position: relative;
+  float: left;
+  object-fit: fill;
+  /*z-index: 2; defined in case we need it for stack order*/ 
+}
+
+/* Movie Text Details CSS */
+div.right_half {
+  display: flex;
+  /*min-height: 120%;*/
+  /*width: 50%;*/
+  position: relative;
+  width: 61%;
+  height: 70%;
+  float: left;
+  flex-direction: column;
+  left: 3%;
+
+}
+
+div.title_year {
+  width: 100%;
+  margin-bottom: 3%; 
+  float: left;
+  margin-top: 10%;
+  position: relative;
+}
+
+div.title {
+  height: 15%;
+  width: 100%;
+
+}
+
+span.release_date {
+  opacity: 0.6;
+  font-size: 25px;
+  font-weight: 400;
 }
 
 /* The Close Button */
 .close {
-    color: #aaaaaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    margin-top: -1%;
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: -1%;
 }
 
 .close:hover,
@@ -106,44 +152,6 @@ path {
     color: #000;
     text-decoration: none;
     cursor: pointer;
-}
-
-/* Movie Poster Details CSS */
-div.poster {
-  display: block;
-  width: 40%;
-  height: 120%;
-  position: relative;
-  float: left;
-  /*z-index: 2; defined in case we need it for stack order*/ 
-}
-
-div.image_content {
-  overflow: visible;
-  width: 20%;
-  height: 40%;
-} 
-
-/* Movie Text Details CSS */
-div.header_poster_wrapper {
-  display: flex;
-  min-height: 120%;
-  /*float: left;*/
-}
-
-div.title {
-  width: 100%;
-  margin-bottom: 3%;
-  font-size: 100px;
-  font-weight: 3px;
-  width:350px; 
-  float:left;
-}
-
-span.release_date {
-  opacity: 0.6;
-  font-size: 1.7em;
-  font-weight: 400;
 }
 
 </style>
@@ -157,33 +165,22 @@ span.release_date {
   <div class="container" id="summaryYear"></div>
   <div class="container" id="summaryRating"></div>
   <div class="container" id="percentage"></div>
+  
   <!-- The Modal -->
-  <div id="myModal" class="modal">
-
-  <!-- Modal content for movie details-->
-  <!-- <section> -->
-    
-    <div id="modalcontent" class="modal-content">
-      <form class="form-inline">
-      <span class="close">&times;</span>
-      <div class= "poster">
-        <div id="poster_image_content" class= "image_content"></div>
-      </div>
-      <div class= "header_poster_wrapper">
-      <!-- <section> -->
-        <div id="movie_title" class="title"> 
-          <!-- <span> Hello World
-            <span class= "release_date"> (1948)</span>
-          </span> -->
+  <div id="myModal" class="overlay">
+  <!-- Modal pop-up for movie details-->
+      <div id="modalcontent" class="popup">
+        <div id= "poster_image" class= "poster"></div>
+        <span class="close">&times;</span>
+        <div class= "right_half">
+          <div id="movie_title" class="title"> 
+            <span id="movie_name" style="font-size:30px"> Example Movie  </span>
+              <span id="movie_year" class= "release_date"> (1948)</span>
+          
+          </div>
         </div>
-      <!-- </section> -->
-      </div>
-        </form>
-
     </div>
-  <!-- </section> -->
-
-</div>
+  </div>
 <script>
 var movieData; //global variable to store json data
 
@@ -453,21 +450,28 @@ var svg = d3.select("body").append("svg")
         // modal.style.visibility = "visible";
 
         //Fill in the content
-        d3.select("#poster_image_content").append("img")
+        d3.select("#poster_image").append("img")
         .attr("id","poster_img")
+        .attr("width", "100%")
+        .attr("height","100%")
         .attr("alt",selectedMovie.Title)
         .attr("class","poster")
         .attr("src",selectedMovie.Poster);
 
-        var movieTitle = d3.select("#movie_title").append("span")
-        .attr("id","movie_title")
-        .text(selectedMovie.Title);
+        // var movieTitle = d3.select("#movie_title").append("span")
+        // .attr("id","movie_title_text")
+        // .attr("height","100%")
+        // // .attr("font-size", "100%")
+        // .text(selectedMovie.Title);
+        d3.select("#movie_name").text(selectedMovie.Title);
 
-        movieTitle.append("span")
-        .attr("id","release_date")
-        .attr("class","release_date")
-        .text(" ("+selectedMovie.Year+")");
-        }, 1200); 
+        // movieTitle.append("span")
+        // .attr("id","release_date")
+        // .attr("class","release_date")
+        // .text(" ("+selectedMovie.Year+")");
+        // }, 1200); 
+        d3.select("#movie_year").text(" ("+selectedMovie.Year+")");
+      }, 1200); 
       
     }
 
@@ -512,6 +516,8 @@ var closeModal = document.getElementsByClassName("close")[0];
 //Remove the added modal content
 function removeModalContent () {
   d3.select("#poster_img").remove();
+  // d3.select("#movie_title_text").remove();
+  // d3.select("#release_date").remove();
 }
 
 // When the user clicks on <span> (x), close the modal
