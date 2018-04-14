@@ -8,16 +8,12 @@
   <script src="https://d3js.org/d3.v4.min.js"></script>
 </head>
 <style >
-
 body {
         font-family: 'Avenir';
         background-color: #bcbcbc
-
       }
-
 header {
     text-align: center;
-
 }
 path {
   stroke: #fff;
@@ -34,17 +30,14 @@ path {
   -webkit-animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
 }
-
 @-webkit-keyframes spin {
   0% { -webkit-transform: rotate(0deg); }
   100% { -webkit-transform: rotate(360deg); }
 }
-
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
-
 #summaryGenre,#summaryYear,#summaryRating,#percentage{
   position:absolute;
   left:540px;
@@ -63,7 +56,6 @@ path {
 #percentage{
   top:475px;
 }
-
 /* The Modal (background) */
 .overlay {
     display: none; /* Hidden by default */
@@ -81,7 +73,6 @@ path {
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
     /*transition: all .5s ease-in-out;*/
 }
-
 /* Modal Content */
 .popup {
     background-color: #fefefe;
@@ -92,7 +83,6 @@ path {
     height: 100%;
     position: relative;
 }
-
 /* Movie Poster Details CSS */
 div.poster {
   display: block;
@@ -103,7 +93,6 @@ div.poster {
   object-fit: fill;
   /*z-index: 2; defined in case we need it for stack order*/ 
 }
-
 /* Movie Text Details CSS */
 div.right_half {
   display: flex;
@@ -115,7 +104,6 @@ div.right_half {
   float: left;
   flex-direction: column;
   left: 3%;
-
 }
 
 /* Section 1*/
@@ -130,9 +118,7 @@ div.right_half {
 div.title {
   height: 10%;
   width: 100%;
-
 }
-
 span.release_date {
   opacity: 0.6;
   font-size: 25px;
@@ -160,16 +146,15 @@ div.plot_summary {
   font-weight: bold;
   margin-top: -1%;
 }
-
 .close:hover,
 .close:focus {
     color: #000;
     text-decoration: none;
     cursor: pointer;
 }
-
 </style>
 
+    
 <body>
   <header><h1 id="steps">
     Select a Genre 
@@ -198,7 +183,6 @@ div.plot_summary {
   </div>
 <script>
 var movieData; //global variable to store json data
-
 //Filter the json file based on genre
 function filterGenre(genre){
     var genrelist=genre.split("/");
@@ -211,9 +195,7 @@ function filterGenre(genre){
       genres=movieData.filter(d => d.Genre==genre);
     }
     return genres;
-
   }
-
 //Filter the movies
   function filterMovie(genre,yearStart,yearEnd,rating){
     var ratinglist=rating.split("/");
@@ -227,7 +209,6 @@ function filterGenre(genre){
     }
     return ratings.length;
   }
-
 //Load the json file and parse it
 d3.json("movies.json", function (error, data) {
   movieData = data;
@@ -322,29 +303,21 @@ d3.json("movies.json", function (error, data) {
                 "name":"R", "size":filterMovie("Horror/Mystery/Sci-Fi",1991,2016,"R")}]}]
         }]
   };
-
 var width = 960,
     height = 700,
     radius = (Math.min(width, height) / 2) - 10;
-
 var formatNumber = d3.format(",d");
-
 var x = d3.scaleLinear()
     .range([0, 2 * Math.PI]);
-
 var y = d3.scaleSqrt()
     .range([0, radius]);
-
 var color = d3.scaleOrdinal(d3.schemeCategory20);
-
 var partition = d3.partition();
-
 var arc = d3.arc()
     .startAngle(d => Math.max(0, Math.min(2 * Math.PI, x(d.x0))))
     .endAngle(d => Math.max(0, Math.min(2 * Math.PI, x(d.x1))))
     .innerRadius(d => Math.max(0, y(d.y0)))
     .outerRadius(d => Math.max(0, y(d.y1)));
-
 var svg = d3.select("body").append("svg")
     .attr("id","sunburst")
     .attr("width", width)
@@ -375,8 +348,6 @@ var svg = d3.select("body").append("svg")
       }
       parent_name=parent_name.substring(2,parent_name.length);
       var topics=parent_name.split("->");
-
-
       var name="";
       if(iter==3){
         name="Click to Generate Movie";
@@ -409,7 +380,6 @@ var svg = d3.select("body").append("svg")
       })
       .attr("opacity", 1);
     }
-
     function mouseout(d){
       svg.selectAll("text").remove();
       svg.selectAll("path")
@@ -420,7 +390,6 @@ var svg = d3.select("body").append("svg")
       document.getElementById("summaryRating").innerHTML = "";
       document.getElementById("percentage").innerHTML = "";
     }
-
     function handleClick(d){
       var genre=""; var year=0; var rating="";
       var topicList=[];
@@ -433,15 +402,11 @@ var svg = d3.select("body").append("svg")
         rating=topicList[0];
         year=topicList[1];
         genre=topicList[2];
-
-
       }else if(topicList.length==2){
         year=topicList[0];
         genre=topicList[1];
-
       }else if(topicList.length==1){
         genre=topicList[0];
-
       }
       
       //Create Loader
@@ -463,7 +428,6 @@ var svg = d3.select("body").append("svg")
         var modal = document.getElementById('myModal');
         modal.style.display = "block";
         // modal.style.visibility = "visible";
-
         //Fill in the content
         d3.select("#poster_image").append("img")
         .attr("id","poster_img")
@@ -472,14 +436,12 @@ var svg = d3.select("body").append("svg")
         .attr("alt",selectedMovie.Title)
         .attr("class","poster")
         .attr("src",selectedMovie.Poster);
-
         // var movieTitle = d3.select("#movie_title").append("span")
         // .attr("id","movie_title_text")
         // .attr("height","100%")
         // // .attr("font-size", "100%")
         // .text(selectedMovie.Title);
         d3.select("#movie_name").text(selectedMovie.Title);
-
         // movieTitle.append("span")
         // .attr("id","release_date")
         // .attr("class","release_date")
@@ -491,7 +453,6 @@ var svg = d3.select("body").append("svg")
       }, 1200); 
       
     }
-
     // Function used to generate movie suggestion based on inputs
     function generateMovie(Genre,Year,Rating){
       var movies=filterGenre(Genre);
@@ -503,18 +464,14 @@ var svg = d3.select("body").append("svg")
         ratings=Rating.split("/")
         movies=movies.filter(function(d){ 
        return d.Rated==ratings[0] || d.Rated==ratings[1]});
-
       }
       var loader=document.getElementById("loadbar");
       loader.parentNode.removeChild(loader);
       return movies[Math.floor(Math.random()*movies.length)];
-
     }
-
     function getAncestors(node) {
     var path = [];
     var current = node;
-
     while (current.parent) {
       path.unshift(current);
       current = current.parent;
@@ -522,28 +479,23 @@ var svg = d3.select("body").append("svg")
     return path;
   }
 });
-
-
 // Code for closing the modal. Model will close if the x is clicked or anywhere outside of the modal is clicked. 
 // Credits: this functionality was based off the modal tutorial on w3schools.
 // Get the modal and get the <span> element that closes the modal
 var modal = document.getElementById('myModal');
 var closeModal = document.getElementsByClassName("close")[0];
-
 //Remove the added modal content
 function removeModalContent () {
   d3.select("#poster_img").remove();
   // d3.select("#movie_title_text").remove();
   // d3.select("#release_date").remove();
 }
-
 // When the user clicks on <span> (x), close the modal
 closeModal.onclick = function() {
     modal.style.display = "none";
     // modal.style.visibility = "hidden";
     removeModalContent();
 }
-
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
     if (event.target == modal) {
@@ -552,8 +504,99 @@ window.onclick = function(event) {
         removeModalContent();
     }
   }
-
 </script>
 
+<div id="plot" style="text-align: center">
+<body>
+<script>    
+var color = d3.scaleOrdinal(d3.schemeCategory20);
+var filmstats;
+d3.json("movies.json", function(data) {
+    filmstats = data;
+    console.log(filmstats);
+    showGraph();
+});
+    
+function showGraph() {
+    var svg2 = d3.select("body").append("svg")
+        .attr("id", "graph")
+        .attr("width", "750")
+        .attr("height", "750")
+    .attr("align","center");
+    var xscale = d3.scaleLinear().domain([0,600]).range([0,660]);
+    var yscale = d3.scaleLinear().domain([0,12]).range([660,0]);
+    var xaxis = d3.axisBottom(xscale);
+    var yaxis = d3.axisLeft(yscale);
+    svg2.append("g").attr("transform", "translate(50,670)").call(xaxis);
+    svg2.append("g").attr("transform", "translate(50,10)").call(yaxis);
+    svg2.append("text").text("Box Office Returns (Million $)")
+        .attr("x","250")
+        .attr("y","720")
+        .style("font-family","avenir")
+        .style("font-size","16");
+    svg2.append("text").text("Academy Awards Won")
+        .attr("x","0")
+        .attr("y","200")
+        .attr("transform", "translate(-185, 450) rotate(-90)")
+        .style("font-family","avenir")
+        .style("font-size","16");
+    for (var i=0; i < filmstats.length; i++) {
+        svg2.append("circle")
+        .attr("cx", 50+xscale(filmstats[i].BoxOffice/1000000))
+        .attr("cy", 10+yscale(filmstats[i].OscarsWon))
+        .attr("r", 10)
+        .attr("fill", d=>color(i))
+        .attr("fill-opacity", "0.5")
+        .attr("stroke","none");
+
+    }
+};
+
+var comedy = document.createElement("button");
+var t0 = document.createTextNode("Comedy/Animation");
+comedy.append(t0);
+document.body.appendChild(comedy);
+    
+comedy.addEventListener("click", function() { 
+    var filter = d3.select("svg2").selectAll("circle").data(
+    filmstats.filter(function(d) {return d.Genre == "Comedy";})); 
+    d3.select("svg2").selectAll("*").remove();
+//    d3.select("svg2").selectAll("circles").enter().
+    for (var i=0; i < filter.length; i++) {
+        svg2.append("circle")
+        .attr("cx", 50+xscale(filter[i].BoxOffice/1000000))
+        .attr("cy", 10+yscale(filter[i].OscarsWon))
+        .attr("r", 10)
+        .attr("fill", d=>color(i))
+        .attr("fill-opacity", "0.5")
+        .attr("stroke","none");
+    }
+
+});
+
+
+var drama = document.createElement("button");
+var t1 = document.createTextNode("Drama/Biography");
+drama.append(t1);
+document.body.appendChild(drama);
+
+var action = document.createElement("button");
+var t2 = document.createTextNode("Action/Adventure");
+action.append(t2);
+document.body.appendChild(action);
+    
+var crime = document.createElement("button");
+var t3 = document.createTextNode("Crime");
+crime.append(t3);
+document.body.appendChild(crime);
+
+var horror = document.createElement("button");
+var t4 = document.createTextNode("Horror/Mystery/Sci-Fi");
+horror.append(t4);
+document.body.appendChild(horror);   
+    
+    
+</script>    
+    
 
 </html>
