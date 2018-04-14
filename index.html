@@ -111,23 +111,24 @@ div.right_half {
   /*width: 50%;*/
   position: relative;
   width: 61%;
-  height: 70%;
+  height: 65%;
   float: left;
   flex-direction: column;
   left: 3%;
 
 }
 
-div.title_year {
+/* Section 1*/
+/*div.title_year {
   width: 100%;
   margin-bottom: 3%; 
   float: left;
   margin-top: 10%;
   position: relative;
-}
+}*/
 
 div.title {
-  height: 15%;
+  height: 10%;
   width: 100%;
 
 }
@@ -138,6 +139,19 @@ span.release_date {
   font-weight: 400;
 }
 
+/* Section 2 */
+div.rating_genre {
+  width: 100%;
+  height: 7%;
+  float: left;
+}
+
+/* Section 3 */
+div.plot_summary {
+  width: 100%;
+  height: 83%;
+}
+ 
 /* The Close Button */
 .close {
   color: #aaaaaa;
@@ -174,10 +188,11 @@ span.release_date {
         <span class="close">&times;</span>
         <div class= "right_half">
           <div id="movie_title" class="title"> 
-            <span id="movie_name" style="font-size:30px"> Example Movie  </span>
-              <span id="movie_year" class= "release_date"> (1948)</span>
-          
+            <span id="movie_name" style="font-size:30px"> Example Movie</span>
+            <span id="movie_year" class= "release_date"> (1948)</span>
           </div>
+          <div id="rating_genre" class="rating_genre">TODO</div>
+          <div id= "plot_summary" class="plot_summary">Example plot summary</div>          
         </div>
     </div>
   </div>
@@ -471,6 +486,8 @@ var svg = d3.select("body").append("svg")
         // .text(" ("+selectedMovie.Year+")");
         // }, 1200); 
         d3.select("#movie_year").text(" ("+selectedMovie.Year+")");
+
+        // d3.select("#plot_summary").text();
       }, 1200); 
       
     }
