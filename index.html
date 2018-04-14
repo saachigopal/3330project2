@@ -193,6 +193,7 @@ div.title_labels {
         </div>
     </div>
   </div>
+  <div id="plot" style="text-align: center"></div>
 <script>
 var movieData; //global variable to store json data
 //Filter the json file based on genre
@@ -522,8 +523,7 @@ window.onclick = function(event) {
   }
 </script>
 
-<div id="plot" style="text-align: center">
-<body>
+
 <script>    
 var color = d3.scaleOrdinal(d3.schemeCategory20);
 var filmstats;
