@@ -569,41 +569,47 @@ function showGraph() {
 var comedy = document.createElement("button");
 var t0 = document.createTextNode("Comedy/Animation");
 comedy.append(t0);
-document.body.appendChild(comedy);
+document.getElementById("plot").appendChild(comedy);
     
 comedy.addEventListener("click", function() { 
-    var filter = d3.select("svg2").selectAll("circle").data(
-    filmstats.filter(function(d) {return d.Genre == "Comedy";})); 
-    d3.select("svg2").selectAll("*").remove();
-//    d3.select("svg2").selectAll("circles").enter().
-    for (var i=0; i < filter.length; i++) {
-        svg2.append("circle")
-        .attr("cx", 50+xscale(filter[i].BoxOffice/1000000))
-        .attr("cy", 10+yscale(filter[i].OscarsWon))
-        .attr("r", 10)
-        .attr("fill", d=>color(i))
-        .attr("fill-opacity", "0.5")
-        .attr("stroke","none");
-    }
+    var ComAni = filmstats.filter(d => (d.Genre == "Comedy" || d.Genre == "Animation")); 
+    console.log(ComAni);
+    d3.select("svg2").selectAll("circles").remove();
+    d3.select("svg2").selectAll("circles").data(ComAni).enter()
+        .append("circle")
+        
 });
+
 var drama = document.createElement("button");
 var t1 = document.createTextNode("Drama/Biography");
 drama.append(t1);
-document.body.appendChild(drama);
+document.getElementById("plot").appendChild(drama);
+
+drama.addEventListener("click", function() {
+    var DramBio = filmstats.filter(d => (d.Genre == "Drama" || d.Genre == "Biography"));
+    console.log(DramBio);
+});
+    
 var action = document.createElement("button");
 var t2 = document.createTextNode("Action/Adventure");
 action.append(t2);
-document.body.appendChild(action);
+document.getElementById("plot").appendChild(action);
+    
+action.addEventListener("click", function() {
+    var ActAdv = filmstats.filter(d => (d.Genre == "Action" || d.Genre == "Adventure"));
+    console.log(ActAdv);
+});
+    
     
 var crime = document.createElement("button");
 var t3 = document.createTextNode("Crime");
 crime.append(t3);
-document.body.appendChild(crime);
+document.getElementById("plot").appendChild(crime);
+
 var horror = document.createElement("button");
 var t4 = document.createTextNode("Horror/Mystery/Sci-Fi");
 horror.append(t4);
-document.body.appendChild(horror);   
-    
+document.getElementById("plot").appendChild(horror);   
     
 </script>    
     
