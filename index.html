@@ -135,7 +135,12 @@ div.rating_genre {
 /* Section 3 */
 div.plot_summary {
   width: 100%;
-  height: 83%;
+  height: 20%;
+}
+
+div.title_labels {
+  font-size: 20px;
+  font-weight: bold;
 }
  
 /* The Close Button */
@@ -173,11 +178,20 @@ div.plot_summary {
         <span class="close">&times;</span>
         <div class= "right_half">
           <div id="movie_title" class="title"> 
-            <span id="movie_name" style="font-size:30px"> Example Movie</span>
+            <span id="movie_name" style="font-size:30px; font-weight:bold"> Example Movie</span>
             <span id="movie_year" class= "release_date"> (1948)</span>
           </div>
           <div id="rating_genre" class="rating_genre">TODO</div>
-          <div id= "plot_summary" class="plot_summary">Example plot summary</div>          
+          <div class="title_labels">Plot Summary:</div>
+          <div id= "plot_summary" class="plot_summary">Example plot summary</div>   
+          <div class="title_labels">Cast List:</div>
+          <div id= "cast">Example cast</div>  
+          <div class="title_labels">Director:</div>
+          <div id= "director">Example director</div>
+          <div class="title_labels">Production Company:</div>
+          <div id= "production_company">Example production company</div>
+          <div class="title_labels">Box Office:</div> 
+          <div id= "box_office">Example box office number</div>    
         </div>
     </div>
   </div>
@@ -448,8 +462,12 @@ var svg = d3.select("body").append("svg")
         // .text(" ("+selectedMovie.Year+")");
         // }, 1200); 
         d3.select("#movie_year").text(" ("+selectedMovie.Year+")");
+        d3.select("#cast").text(selectedMovie.Actors);
+        d3.select("#director").text(selectedMovie.Director);
+        d3.select("#production_company").text(selectedMovie.Production);
+        d3.select("#box_office").text(selectedMovie["BoxOffice (US Gross)"]);
 
-        // d3.select("#plot_summary").text();
+        d3.select("#plot_summary").text(selectedMovie.Plot);
       }, 1200); 
       
     }
