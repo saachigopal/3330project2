@@ -105,7 +105,6 @@ div.right_half {
   flex-direction: column;
   left: 3%;
 }
-
 /* Section 1*/
 /*div.title_year {
   width: 100%;
@@ -114,7 +113,6 @@ div.right_half {
   margin-top: 10%;
   position: relative;
 }*/
-
 div.title {
   height: 10%;
   width: 100%;
@@ -124,14 +122,12 @@ span.release_date {
   font-size: 25px;
   font-weight: 400;
 }
-
 /* Section 2 */
 div.rating_genre {
   width: 100%;
   height: 7%;
   float: left;
 }
-
 /* Section 3 */
 div.plot_summary {
   width: 100%;
@@ -566,10 +562,8 @@ function showGraph() {
         .attr("fill", d=>color(i))
         .attr("fill-opacity", "0.5")
         .attr("stroke","none");
-
     }
 };
-
 var comedy = document.createElement("button");
 var t0 = document.createTextNode("Comedy/Animation");
 comedy.append(t0);
@@ -589,15 +583,11 @@ comedy.addEventListener("click", function() {
         .attr("fill-opacity", "0.5")
         .attr("stroke","none");
     }
-
 });
-
-
 var drama = document.createElement("button");
 var t1 = document.createTextNode("Drama/Biography");
 drama.append(t1);
 document.body.appendChild(drama);
-
 var action = document.createElement("button");
 var t2 = document.createTextNode("Action/Adventure");
 action.append(t2);
@@ -607,7 +597,6 @@ var crime = document.createElement("button");
 var t3 = document.createTextNode("Crime");
 crime.append(t3);
 document.body.appendChild(crime);
-
 var horror = document.createElement("button");
 var t4 = document.createTextNode("Horror/Mystery/Sci-Fi");
 horror.append(t4);
