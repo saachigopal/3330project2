@@ -286,6 +286,17 @@
 
   }
 
+  button {
+        color: black;
+        background-color: white;
+        padding: 10px 18px;
+        font: "avenir";
+        font-size: 14px;
+        text-align: center;
+        border-radius: 8px; 
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        margin: 5px;
+    }
   
 </style>
     
@@ -779,8 +790,7 @@ function showGraph() {
         .attr("cx", function(d){ return 50+xscale(Number(d["BoxOffice (US Gross)"].replace(/[, ]+/g, ""))/1000000);})
         .attr("cy", function(d){ return 10+yscale(d["Oscars Won"]);})
         .attr("r", 10)
-        .attr("fill", function(d,i){ 
-          return color(i); })
+        .attr("fill", "#279221")
         .attr("fill-opacity", "0.5")
         .attr("stroke","none")
         .on("click",displayPieCharts);
@@ -797,8 +807,7 @@ function showGraph() {
         .attr("cx", function(d){ return 50+xscale(Number(d["BoxOffice (US Gross)"].replace(/[, ]+/g, ""))/1000000);})
         .attr("cy", function(d){ return 10+yscale(d["Oscars Won"]);})
         .attr("r", 10)
-        .attr("fill", function(d,i){ 
-          return color(i); })
+        .attr("fill", "#804baf")
         .attr("fill-opacity", "0.5")
         .attr("stroke","none")
         .on("click",displayPieCharts);
@@ -816,8 +825,7 @@ function showGraph() {
         .attr("cx", function(d){ return 50+xscale(Number(d["BoxOffice (US Gross)"].replace(/[, ]+/g, ""))/1000000);})
         .attr("cy", function(d){ return 10+yscale(d["Oscars Won"]);})
         .attr("r", 10)
-        .attr("fill", function(d,i){ 
-          return color(i); })
+        .attr("fill", "#fd690f")
         .attr("fill-opacity", "0.5")
         .attr("stroke","none")
         .on("click",displayPieCharts);
@@ -835,8 +843,7 @@ function showGraph() {
         .attr("cx", function(d){ return 50+xscale(Number(d["BoxOffice (US Gross)"].replace(/[, ]+/g, ""))/1000000);})
         .attr("cy", function(d){ return 10+yscale(d["Oscars Won"]);})
         .attr("r", 10)
-        .attr("fill", function(d,i){ 
-          return color(i); })
+        .attr("fill", "#1b62a5")
         .attr("fill-opacity", "0.5")
         .attr("stroke","none")
         .on("click",displayPieCharts);
@@ -853,8 +860,7 @@ function showGraph() {
         .attr("cx", function(d){ return 50+xscale(Number(d["BoxOffice (US Gross)"].replace(/[, ]+/g, ""))/1000000);})
         .attr("cy", function(d){ return 10+yscale(d["Oscars Won"]);})
         .attr("r", 10)
-        .attr("fill", function(d,i){ 
-          return color(i); })
+        .attr("fill", "#ca111f")
         .attr("fill-opacity", "0.5")
         .attr("stroke","none")
         .on("click",displayPieCharts);
