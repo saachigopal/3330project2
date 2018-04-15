@@ -136,7 +136,6 @@ div.plot_summary {
   width: 100%;
   /*height: 20%;*/
 }
-
 div.title_labels {
   font-size: 20px;
   font-weight: bold;
@@ -657,6 +656,8 @@ div.title_labels {
         </div>
     </div>
   </div>
+  <div id="plot"></div>
+<div id="buttons"></div>
 <script>
 var movieData; //global variable to store json data
 //Filter the json file based on genre
@@ -994,8 +995,7 @@ window.onclick = function(event) {
   }
 </script>
 
-<div id="plot" style="text-align: center">
-<body>
+
 <script>    
 var color = d3.scaleOrdinal(d3.schemeCategory20);
 var filmstats;
@@ -1006,7 +1006,7 @@ d3.json("movies.json", function(data) {
 });
     
 function showGraph() {
-    var svg2 = d3.select("body").append("svg")
+    var svg2 = d3.select("#plot").append("svg")
         .attr("id", "graph")
         .attr("width", "750")
         .attr("height", "750")
@@ -1030,8 +1030,8 @@ function showGraph() {
         .style("font-size","16");
     for (var i=0; i < filmstats.length; i++) {
         svg2.append("circle")
-        .attr("cx", 50+xscale(filmstats[i].BoxOffice/1000000))
-        .attr("cy", 10+yscale(filmstats[i].OscarsWon))
+        .attr("cx", 50+xscale(Number(filmstats[i]["BoxOffice (US Gross)"].replace(/[, ]+/g, ""))/1000000))
+        .attr("cy", 10+yscale(filmstats[i]["Oscars Won"]))
         .attr("r", 10)
         .attr("fill", d=>color(i))
         .attr("fill-opacity", "0.5")
@@ -1041,22 +1041,20 @@ function showGraph() {
 var comedy = document.createElement("button");
 var t0 = document.createTextNode("Comedy/Animation");
 comedy.append(t0);
-document.getElementById("plot").appendChild(comedy);
+document.getElementById("buttons").appendChild(comedy);
     
 comedy.addEventListener("click", function() { 
     var ComAni = filmstats.filter(d => (d.Genre == "Comedy" || d.Genre == "Animation")); 
     console.log(ComAni);
-    d3.select("svg2").selectAll("circles").remove();
+    //d3.select("svg2").selectAll("circles").remove();
     d3.select("svg2").selectAll("circles").data(ComAni).enter()
         .append("circle")
         
 });
-
 var drama = document.createElement("button");
 var t1 = document.createTextNode("Drama/Biography");
 drama.append(t1);
-document.getElementById("plot").appendChild(drama);
-
+document.getElementById("buttons").appendChild(drama);
 drama.addEventListener("click", function() {
     var DramBio = filmstats.filter(d => (d.Genre == "Drama" || d.Genre == "Biography"));
     console.log(DramBio);
@@ -1065,7 +1063,7 @@ drama.addEventListener("click", function() {
 var action = document.createElement("button");
 var t2 = document.createTextNode("Action/Adventure");
 action.append(t2);
-document.getElementById("plot").appendChild(action);
+document.getElementById("buttons").appendChild(action);
     
 action.addEventListener("click", function() {
     var ActAdv = filmstats.filter(d => (d.Genre == "Action" || d.Genre == "Adventure"));
@@ -1076,13 +1074,22 @@ action.addEventListener("click", function() {
 var crime = document.createElement("button");
 var t3 = document.createTextNode("Crime");
 crime.append(t3);
-document.getElementById("plot").appendChild(crime);
-
+document.getElementById("buttons").appendChild(crime);
+    
+crime.addEventListener("click", function() {
+    var cri = filmstats.filter(d => d.Genre == "Crime");
+    console.log(cri);
+});
+    
 var horror = document.createElement("button");
 var t4 = document.createTextNode("Horror/Mystery/Sci-Fi");
 horror.append(t4);
-document.getElementById("plot").appendChild(horror);   
+document.getElementById("buttons").appendChild(horror);   
     
+horror.addEventListener("click", function() {
+    var hms = filmstats.filter(d => d.Genre == "Horror" || d.Genre == "Mystery" || d.Genre == "Sci-Fi");
+    console.log(hms);
+});
 </script>    
     
 
