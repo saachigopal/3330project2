@@ -255,6 +255,38 @@
       text-decoration: none;
       cursor: pointer;
   }
+
+  #movieTitle{
+    position:absolute;
+    width: 180px;
+    text-align: center;
+    left:1050px;
+    top:800px;
+    font-size: 120%;
+
+  }
+   #audscore{
+    position:absolute;
+    width: 180px;
+    text-align: center;
+    left:1050px;
+    top:925px;
+    opacity:0.5;
+    font-size: 160%;
+
+  }
+  #criticscore{
+    position:absolute;
+    width: 180px;
+    text-align: center;
+    left:1050px;
+    top:1250px;
+    opacity:0.5;
+    font-size: 160%;
+
+  }
+
+  
 </style>
     
 <body>
@@ -322,7 +354,19 @@
         </div>
     </div>
   </div>
-  <div id="plot"></div>
+
+  <div id="plot">
+  <div id="movieTitle">
+  </div>
+    <div id="audscore">
+      <h1 id="aud">
+      </h1>
+      </div>
+    <div id="criticscore">
+    <h1 id="critic">
+      </h1>
+  </div>
+  </div>
   <div id="buttons"></div>
 </body>
 
@@ -679,22 +723,20 @@ window.onclick = function(event) {
   }
 </script>
 
-
 <script>    
 var color = d3.scaleOrdinal(d3.schemeCategory20);
 var filmstats;
 d3.json("movies.json", function(data) {
     filmstats = data;
-    console.log(filmstats);
     showGraph();
 });
-    
-function showGraph() {
-    var svg2 = d3.select("#plot").append("svg")
+var svg2 = d3.select("#plot").append("svg")
         .attr("id", "graph")
-        .attr("width", "750")
+        .attr("width", "1200")
         .attr("height", "750")
     .attr("align","center");
+    
+function showGraph() {
     var xscale = d3.scaleLinear().domain([0,600]).range([0,660]);
     var yscale = d3.scaleLinear().domain([0,12]).range([660,0]);
     var xaxis = d3.axisBottom(xscale);
@@ -712,33 +754,36 @@ function showGraph() {
         .attr("transform", "translate(-185, 450) rotate(-90)")
         .style("font-family","avenir")
         .style("font-size","16");
-    for (var i=0; i < filmstats.length; i++) {
-        svg2.append("circle")
-        .attr("cx", 50+xscale(Number(filmstats[i]["BoxOffice (US Gross)"].replace(/[, ]+/g, ""))/1000000))
-        .attr("cy", 10+yscale(filmstats[i]["Oscars Won"]))
+    //for (var i=0; i < filmstats.length; i++) {
+        svg2.selectAll("circle").data(filmstats)
+        .enter().append("circle")
+        .attr("cx", function(d){ return 50+xscale(Number(d["BoxOffice (US Gross)"].replace(/[, ]+/g, ""))/1000000);})
+        .attr("cy", function(d){ return 10+yscale(d["Oscars Won"]);})
         .attr("r", 10)
-        .attr("fill", d=>color(i))
+        .attr("fill", function(d,i){ 
+          return color(i); })
         .attr("fill-opacity", "0.5")
-        .attr("stroke","none");
-    }
-  var comedy = document.createElement("button");
+        .attr("stroke","none")
+        .on("click",displayPieCharts);
+    //}
+
+    var comedy = document.createElement("button");
     var t0 = document.createTextNode("Comedy/Animation");
     comedy.append(t0);
     document.getElementById("buttons").appendChild(comedy);
-
     comedy.addEventListener("click", function() { 
         var ComAni = filmstats.filter(d => (d.Genre == "Comedy" || d.Genre == "Animation")); 
         svg2.selectAll("circle").remove();
-        for (var i=0; i < ComAni.length; i++) {
-            svg2.append("circle")
-            .attr("cx", 50+xscale(Number(ComAni[i]["BoxOffice (US Gross)"].replace(/[, ]+/g, ""))/1000000))
-            .attr("cy", 10+yscale(ComAni[i]["Oscars Won"]))
-            .attr("r", 10)
-            .attr("fill", d=>color(i))
-            .attr("fill-opacity", "0.8")
-            .attr("stroke","none");
-    }
-
+        svg2.selectAll("circle").data(ComAni)
+        .enter().append("circle")
+        .attr("cx", function(d){ return 50+xscale(Number(d["BoxOffice (US Gross)"].replace(/[, ]+/g, ""))/1000000);})
+        .attr("cy", function(d){ return 10+yscale(d["Oscars Won"]);})
+        .attr("r", 10)
+        .attr("fill", function(d,i){ 
+          return color(i); })
+        .attr("fill-opacity", "0.5")
+        .attr("stroke","none")
+        .on("click",displayPieCharts);
     });
     var drama = document.createElement("button");
     var t1 = document.createTextNode("Drama/Biography");
@@ -747,77 +792,155 @@ function showGraph() {
     drama.addEventListener("click", function() {
         var DramBio = filmstats.filter(d => (d.Genre == "Drama" || d.Genre == "Biography"));
         svg2.selectAll("circle").remove();
-        for (var i=0; i < DramBio.length; i++) {
-            svg2.append("circle")
-            .attr("cx", 50+xscale(Number(DramBio[i]["BoxOffice (US Gross)"].replace(/[, ]+/g, ""))/1000000))
-            .attr("cy", 10+yscale(DramBio[i]["Oscars Won"]))
-            .attr("r", 10)
-            .attr("fill", d=>color(i))
-            .attr("fill-opacity", "0.8")
-            .attr("stroke","none");
-    }
-
+        svg2.selectAll("circle").data(DramBio)
+        .enter().append("circle")
+        .attr("cx", function(d){ return 50+xscale(Number(d["BoxOffice (US Gross)"].replace(/[, ]+/g, ""))/1000000);})
+        .attr("cy", function(d){ return 10+yscale(d["Oscars Won"]);})
+        .attr("r", 10)
+        .attr("fill", function(d,i){ 
+          return color(i); })
+        .attr("fill-opacity", "0.5")
+        .attr("stroke","none")
+        .on("click",displayPieCharts);
+    
     });
-
     var action = document.createElement("button");
     var t2 = document.createTextNode("Action/Adventure");
     action.append(t2);
     document.getElementById("buttons").appendChild(action);
-
     action.addEventListener("click", function() {
         var ActAdv = filmstats.filter(d => (d.Genre == "Action" || d.Genre == "Adventure"));
         svg2.selectAll("circle").remove();
-        for (var i=0; i < ActAdv.length; i++) {
-            svg2.append("circle")
-            .attr("cx", 50+xscale(Number(ActAdv[i]["BoxOffice (US Gross)"].replace(/[, ]+/g, ""))/1000000))
-            .attr("cy", 10+yscale(ActAdv[i]["Oscars Won"]))
-            .attr("r", 10)
-            .attr("fill", d=>color(i))
-            .attr("fill-opacity", "0.8")
-            .attr("stroke","none");
-    }
+        svg2.selectAll("circle").data(ActAdv)
+        .enter().append("circle")
+        .attr("cx", function(d){ return 50+xscale(Number(d["BoxOffice (US Gross)"].replace(/[, ]+/g, ""))/1000000);})
+        .attr("cy", function(d){ return 10+yscale(d["Oscars Won"]);})
+        .attr("r", 10)
+        .attr("fill", function(d,i){ 
+          return color(i); })
+        .attr("fill-opacity", "0.5")
+        .attr("stroke","none")
+        .on("click",displayPieCharts);
         
     });
-
-
     var crime = document.createElement("button");
     var t3 = document.createTextNode("Crime");
     crime.append(t3);
     document.getElementById("buttons").appendChild(crime);
-
     crime.addEventListener("click", function() {
         var cri = filmstats.filter(d => d.Genre == "Crime");
         svg2.selectAll("circle").remove();
-        for (var i=0; i < cri.length; i++) {
-            svg2.append("circle")
-            .attr("cx", 50+xscale(Number(cri[i]["BoxOffice (US Gross)"].replace(/[, ]+/g, ""))/1000000))
-            .attr("cy", 10+yscale(cri[i]["Oscars Won"]))
-            .attr("r", 10)
-            .attr("fill", d=>color(i))
-            .attr("fill-opacity", "0.8")
-            .attr("stroke","none");
-        }
+        svg2.selectAll("circle").data(cri)
+        .enter().append("circle")
+        .attr("cx", function(d){ return 50+xscale(Number(d["BoxOffice (US Gross)"].replace(/[, ]+/g, ""))/1000000);})
+        .attr("cy", function(d){ return 10+yscale(d["Oscars Won"]);})
+        .attr("r", 10)
+        .attr("fill", function(d,i){ 
+          return color(i); })
+        .attr("fill-opacity", "0.5")
+        .attr("stroke","none")
+        .on("click",displayPieCharts);
     });
-
     var horror = document.createElement("button");
     var t4 = document.createTextNode("Horror/Mystery/Sci-Fi");
     horror.append(t4);
     document.getElementById("buttons").appendChild(horror);   
-
     horror.addEventListener("click", function() {
         var hms = filmstats.filter(d => d.Genre == "Horror" || d.Genre == "Mystery" || d.Genre == "Sci-Fi");
         svg2.selectAll("circle").remove();
-        for (var i=0; i < hms.length; i++) {
-            svg2.append("circle")
-            .attr("cx", 50+xscale(Number(hms[i]["BoxOffice (US Gross)"].replace(/[, ]+/g, ""))/1000000))
-            .attr("cy", 10+yscale(hms[i]["Oscars Won"]))
-            .attr("r", 10)
-            .attr("fill", d=>color(i))
-            .attr("fill-opacity", "0.8")
-            .attr("stroke","none");
-        }
+        svg2.selectAll("circle").data(hms)
+        .enter().append("circle")
+        .attr("cx", function(d){ return 50+xscale(Number(d["BoxOffice (US Gross)"].replace(/[, ]+/g, ""))/1000000);})
+        .attr("cy", function(d){ return 10+yscale(d["Oscars Won"]);})
+        .attr("r", 10)
+        .attr("fill", function(d,i){ 
+          return color(i); })
+        .attr("fill-opacity", "0.5")
+        .attr("stroke","none")
+        .on("click",displayPieCharts);
     });
 };
+ function displayPieCharts(d){
+  var scorescale=d3.scaleLinear().domain([0,100]).range([0,360]);
+  //pie charts
+svg2.append("path")
+.attr("id","pie-1")
+//.attr("d","M 150 175 L 150 75 A 100 100 0 1 1 80.91806823391462 247.3027434020724 Z")
+.attr("fill","powderblue")
+ .attr("transform", "translate(780,10)")
+
+ svg2.append("path")
+.attr("id","pie-2")
+//.attr("d","M 150 175 L 150 75 A 100 100 0 1 1 80.91806823391462 247.3027434020724 Z")
+.attr("fill","pink")
+ .attr("transform", "translate(780,350)")
+
+
+// helper function to generate the segment as a path
+function generateSVGSegment(x, y, r, startAngle, endAngle) {
+ 
+ // convert angles to Radians
+ startAngle *= (Math.PI / 180);
+ endAngle *= (Math.PI / 180);
+ 
+ var largeArc = endAngle - startAngle <= Math.PI ? 0 : 1; // 1 if angle > 180 degrees
+ var sweepFlag = 1; // is arc to be drawn in +ve direction?
+ 
+ return ['M', x, y, 'L', x + Math.sin(startAngle) * r, y - (Math.cos(startAngle) * r),
+         'A', r, r, 0, largeArc, sweepFlag, x + Math.sin(endAngle) * r, y - (Math.cos(endAngle) * r), 'Z'
+        ].join(' ');
+}
+ 
+// our custom interpolator, which returns an interpolator function
+// which when called with a time (0-1), generates a segment sized according to time
+function interpolateSVGSegment(x, y, r, startAngle, endAngle) {
+ return function(t) {
+   return generateSVGSegment(x, y, r, startAngle, startAngle + ((endAngle - startAngle) * t));
+ };
+}
+ 
+// we're ready to kick it off
+
+var audscore=scorescale(d["Audience (imdbRating)"]);
+var criticscore=scorescale(d["Critic (RottenTomatoes)"]);
+svg2.select('#pie-1').transition().duration(1000)
+ .attrTween('d', function() {
+   return interpolateSVGSegment(150, 175, 130, 0, audscore);
+ });
+ svg2.select('#pie-2').transition().duration(1000)
+ .attrTween('d', function() {
+   return interpolateSVGSegment(150, 175, 130, 0, criticscore);
+ });
+ document.getElementById("aud").innerHTML = d["Audience (imdbRating)"]+"%";
+ document.getElementById("critic").innerHTML = d["Critic (RottenTomatoes)"]+"%";
+document.getElementById("movieTitle").innerHTML = d["Title"];
+
+svg2.append("rect")
+.attr("x", 790)
+.attr("y", 700)
+.attr("width", "150")
+.attr("height", "20")
+.attr("fill","powderblue");
+svg2.append("rect")
+.attr("x", 990)
+.attr("y", 700)
+.attr("width", "150")
+.attr("height", "20")
+.attr("fill","pink");
+
+svg2.append("text")
+.attr("x", 810)
+.attr("y", 690)
+.attr("fill","black")
+.text("Audience Score");
+
+svg2.append("text")
+.attr("x", 1025)
+.attr("y", 690)
+.attr("fill","black")
+.text("Critics Score");
+
+ }
 
 </script>    
     
