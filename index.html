@@ -281,7 +281,7 @@
             <span id="movie_name" style="font-size:35px; font-weight:bold; display:inline"> Example Movie</span>
             <span id="movie_year" class= "release_date"> (1948)</span>
           </div>
-          <div id="section_two" style="display: flex; flex-direction: row; height:43%">
+          <div id="section_two" style="display: flex; flex-direction: row; height:40%">
             <!-- Once again, credits to Anders Ingemann for this awesome code -->
             <div style="width: 37%; height: 100%; margin-bottom: 2%">
             <div id= "rating_circle" class="radial-progress" data-progress="0">
@@ -305,6 +305,11 @@
           <div style="float: right; display: flex; flex-direction: column">
             <div class="title_labels">Genre:</div>
             <div id="genre">Example genre</div>
+            <div class="title_labels">Rated:</div>
+            <div id="rating">Example rating</div>
+            <div class="title_labels">Runtime:</div>
+            <div id="runtime">Example runtime</div>
+            
           </div>
           </div>
           <div class="title_labels">Plot Summary:</div>
@@ -580,7 +585,7 @@ var svg = d3.select("#sunburst").append("svg")
         .attr("class","poster")
         .attr("src",selectedMovie.Poster);
 
-        //Add the rating and genre
+        //Add section 2 info: the score, genre, rating, and runtime
         score_type = 1;
         rottenTomatoesScore = selectedMovie["Critic (RottenTomatoes)"];
         IMDBscore = selectedMovie["Audience (imdbRating)"];
@@ -588,7 +593,9 @@ var svg = d3.select("#sunburst").append("svg")
         setTimeout(function () {
           $('.radial-progress').attr('data-progress', rottenTomatoesScore);
         }, 200);
-        d3.select("#genre").text(selectedMovie.Genre)
+        d3.select("#genre").text(selectedMovie.Genre);
+        d3.select("#rating").text(selectedMovie.Rated);
+        d3.select("#runtime").text(selectedMovie.Runtime);
 
         //Add the rest of the information
         d3.select("#movie_name").text(selectedMovie.Title); 
