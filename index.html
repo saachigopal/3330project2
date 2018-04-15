@@ -683,7 +683,7 @@ window.onclick = function(event) {
 <script>    
 var color = d3.scaleOrdinal(d3.schemeCategory20);
 var filmstats;
-d3.json("movies.json", function(data) {
+d3.json("plot.json", function(data) {
     filmstats = data;
     console.log(filmstats);
     showGraph();
