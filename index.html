@@ -258,47 +258,6 @@
       text-decoration: none;
       cursor: pointer;
   }
-
-  /* Rating Circle */
-  .progress-circle {
-    background-color: #ddd;
-    border-radius: 50%;
-    display: inline-block;
-    height: 5%;
-    /*margin: 4rem 2rem 0;*/
-    position: relative;
-    width: 5%;
-  }
-  .progress-circle:before {
-    align-items: center;
-    background-color: #fff;
-    border-radius: 50%;
-    content: attr(data-progress) '%';
-    display: flex;
-    font-size: 3rem;
-    justify-content: center;
-    position: absolute;
-    left: 1rem;
-    right: 1rem;
-    top: 1rem;
-    bottom: 1rem;
-    transition: -webkit-transform 0.2s ease;
-    transition: transform 0.2s ease;
-    transition: transform 0.2s ease, -webkit-transform 0.2s ease;
-  }
-  .progress-circle:after {
-    background-color: #0083ff;
-    border-radius: 50%;
-    content: '';
-    display: inline-block;
-    height: 100%;
-    width: 100%;
-  }
-  .progress-circle:hover:before,
-  .progress-circle:focus:before {
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
-  }
 </style>
     
 <body>
@@ -611,8 +570,8 @@ var svg = d3.select("#sunburst").append("svg")
         //Display the modal
         var modal = document.getElementById('myModal');
         modal.style.display = "block";
-        // modal.style.visibility = "visible";
-        //Fill in the content
+        
+        //Add the poster
         d3.select("#poster_image").append("img")
         .attr("id","poster_img")
         .attr("width", "100%")
@@ -620,30 +579,8 @@ var svg = d3.select("#sunburst").append("svg")
         .attr("alt",selectedMovie.Title)
         .attr("class","poster")
         .attr("src",selectedMovie.Poster);
-        // var movieTitle = d3.select("#movie_title").append("span")
-        // .attr("id","movie_title_text")
-        // .attr("height","100%")
-        // // .attr("font-size", "100%")
-        // .text(selectedMovie.Title);
-        d3.select("#movie_name").text(selectedMovie.Title);
-        // movieTitle.append("span")
-        // .attr("id","release_date")
-        // .attr("class","release_date")
-        // .text(" ("+selectedMovie.Year+")");
-        // }, 1200); 
-        d3.select("#movie_year").text(" ("+selectedMovie.Year+")");
-        d3.select("#cast").text(selectedMovie.Actors);
-        d3.select("#director").text(selectedMovie.Director);
-        d3.select("#production_company").text(selectedMovie.Production);
-        d3.select("#box_office").text(selectedMovie["BoxOffice (US Gross)"]);
 
-        //Add the rating
-        // d3.select("#rating_genre").append("div")
-        // .attr("style","width: 20%; height: 100%")
-        // .attr("id","rating_circle")
-        // .attr("class","progress-circle")
-        // .attr("data-progress","75");
-        // $('.radial-progress').attr('data-progress',selectedMovie["Critic (RottenTomatoes)"]);
+        //Add the rating and genre
         score_type = 1;
         rottenTomatoesScore = selectedMovie["Critic (RottenTomatoes)"];
         IMDBscore = selectedMovie["Audience (imdbRating)"];
@@ -653,6 +590,13 @@ var svg = d3.select("#sunburst").append("svg")
         }, 200);
         d3.select("#genre").text(selectedMovie.Genre)
 
+        //Add the rest of the information
+        d3.select("#movie_name").text(selectedMovie.Title); 
+        d3.select("#movie_year").text(" ("+selectedMovie.Year+")");
+        d3.select("#cast").text(selectedMovie.Actors);
+        d3.select("#director").text(selectedMovie.Director);
+        d3.select("#production_company").text(selectedMovie.Production);
+        d3.select("#box_office").text(selectedMovie["BoxOffice (US Gross)"]);
         d3.select("#plot_summary").text(selectedMovie.Plot);
       }, 1200); 
       
@@ -714,14 +658,12 @@ var closeModal = document.getElementsByClassName("close")[0];
 //Remove the added modal content
 function removeModalContent () {
   d3.select("#poster_img").remove();
-  // d3.select("#rating_circle").remove();
   d3.select("#rating_circle").attr("data-progress","0");
   d3.select("#score_type").text("Rotten Tomatoes")
 }
 // When the user clicks on <span> (x), close the modal
 closeModal.onclick = function() {
     modal.style.display = "none";
-    // modal.style.visibility = "hidden";
     removeModalContent();
 }
 // When the user clicks anywhere outside of the modal, close it
