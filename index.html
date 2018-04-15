@@ -258,11 +258,13 @@
 
   #movieTitle{
     position:absolute;
-    width: 180px;
+    width: 350px;
     text-align: center;
-    left:1050px;
+    left:765px;
     top:800px;
-    font-size: 120%;
+    font-size: 180%;
+    font-weight: bold;
+    opacity:0.5;
 
   }
    #audscore{
@@ -873,7 +875,7 @@ svg2.append("path")
 .attr("id","pie-1")
 //.attr("d","M 150 175 L 150 75 A 100 100 0 1 1 80.91806823391462 247.3027434020724 Z")
 .attr("fill","powderblue")
- .attr("transform", "translate(780,10)")
+ .attr("transform", "translate(780,80)")
 
  svg2.append("path")
 .attr("id","pie-2")
@@ -906,16 +908,17 @@ function interpolateSVGSegment(x, y, r, startAngle, endAngle) {
 }
  
 // we're ready to kick it off
-
-var audscore=scorescale(d["Audience (imdbRating)"]);
-var criticscore=scorescale(d["Critic (RottenTomatoes)"]);
+var a=(d["Audience (imdbRating)"]==100)? 99.99: d["Audience (imdbRating)"];
+var c=(d["Critic (RottenTomatoes)"]==100)?99.99:d["Critic (RottenTomatoes)"];
+var audscore=scorescale(a);
+var criticscore=scorescale(c);
 svg2.select('#pie-1').transition().duration(1000)
  .attrTween('d', function() {
-   return interpolateSVGSegment(150, 175, 130, 0, audscore);
+   return interpolateSVGSegment(150, 175, 120, 0, audscore);
  });
  svg2.select('#pie-2').transition().duration(1000)
  .attrTween('d', function() {
-   return interpolateSVGSegment(150, 175, 130, 0, criticscore);
+   return interpolateSVGSegment(150, 175, 120, 0, criticscore);
  });
  document.getElementById("aud").innerHTML = d["Audience (imdbRating)"]+"%";
  document.getElementById("critic").innerHTML = d["Critic (RottenTomatoes)"]+"%";
