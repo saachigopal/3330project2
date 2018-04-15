@@ -8,7 +8,6 @@
   <!-- Radial progress bar used to demonstrate ratings. Credits to Anders Ingemann for this code, which can be found on the following github repo: https://github.com/andsens/blog-material/blob/master/radial-progress/hal.html -->
   <style type="text/less">
     @import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
-
     .radial-progress {
       @circle-size: 120px;
       @circle-background: #d6dadc;
@@ -20,11 +19,9 @@
       @percentage-color: #97a71d;
       @percentage-font-size: 22px;
       @percentage-text-width: 57px;
-
       /*margin-left: 1%;*/
       width:  @circle-size;
       height: @circle-size;
-
       background-color: @circle-background;
       border-radius: 50%;
       .circle {
@@ -58,7 +55,6 @@
         position:    absolute;
         margin-left: (@circle-size - @inset-size)/2;
         margin-top:  (@circle-size - @inset-size)/2;
-
         background-color: @inset-color;
         border-radius: 50%;
         box-shadow: @shadow;
@@ -67,17 +63,14 @@
           position:    absolute;
           top:         (@inset-size - @percentage-font-size) / 2;
           left:        (@inset-size - @percentage-text-width) / 2;
-
           line-height: 1;
           text-align:  center;
-
           font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
           color:       @percentage-color;
           font-weight: 800;
           font-size:   @percentage-font-size;
         }
       }
-
       @i: 0;
       @increment: 180deg / 100;
       .loop (@i) when (@i <= 100) {
@@ -157,7 +150,6 @@
   #percentage{
     top:475px;
   }
-
   /* The Modal (background) - adapted from the modal tutorial on w3schools. Credits to them for the skeleton code. */
   .overlay {
       display: none; /* Hidden by default */
@@ -174,7 +166,6 @@
       background-color: rgb(0,0,0); /* Fallback color */
       background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   }
-
   /* Modal Content */
   .popup {
       background-color: #fefefe;
@@ -195,7 +186,6 @@
     float: left;
     object-fit: fill;
   }
-
   /* Movie Text Details CSS */
   div.right_half {
     display: flex;
@@ -206,7 +196,6 @@
     flex-direction: column;
     left: 3%;
   }
-
   /* Section 1*/
   div.title {
     height: 14%;
@@ -220,7 +209,6 @@
     font-weight: 400;
     display: inline;
   }
-
   /* Section 2 */
   div.rating_genre {
     width: 100%;
@@ -228,7 +216,6 @@
     float: left;
     margin-bottom: 5%;
   }
-
   /* Section 3 */
   div.plot_summary {
     width: 100%;
@@ -255,39 +242,36 @@
       text-decoration: none;
       cursor: pointer;
   }
-
   #movieTitle{
     position:absolute;
     width: 350px;
     text-align: center;
     left:765px;
-    top:800px;
+    top:820px;
     font-size: 180%;
     font-weight: bold;
     opacity:0.5;
 
   }
+
    #audscore{
     position:absolute;
     width: 180px;
     text-align: center;
     left:1050px;
-    top:925px;
+    top:990px;
     opacity:0.5;
     font-size: 160%;
-
   }
   #criticscore{
     position:absolute;
     width: 180px;
     text-align: center;
     left:1050px;
-    top:1250px;
+    top:1275px;
     opacity:0.5;
     font-size: 160%;
-
   }
-
   button {
         color: black;
         background-color: white;
@@ -299,7 +283,9 @@
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
         margin: 5px;
     }
-  
+    #sunburst {
+        margin-bottom: 20px;
+    }
 </style>
     
 <body>
@@ -638,7 +624,6 @@ var svg = d3.select("#sunburst").append("svg")
         .attr("alt",selectedMovie.Title)
         .attr("class","poster")
         .attr("src",selectedMovie.Poster);
-
         //Add section 2 info: the score, genre, rating, and runtime
         score_type = 0;
         rottenTomatoesScore = selectedMovie["Critic (RottenTomatoes)"];
@@ -650,7 +635,6 @@ var svg = d3.select("#sunburst").append("svg")
         d3.select("#genre").text(selectedMovie.Genre);
         d3.select("#rating").text(selectedMovie.Rated);
         d3.select("#runtime").text(selectedMovie.Runtime);
-
         //Add the rest of the information
         d3.select("#movie_name").text(selectedMovie.Title); 
         d3.select("#movie_year").text(" ("+selectedMovie.Year+")");
@@ -688,12 +672,10 @@ var svg = d3.select("#sunburst").append("svg")
     return path;
   }
 });
-
 // Code adapted from the original radial progress tutorial. Many thanks again.
 var IMDBscore;
 var rottenTomatoesScore;
 var score_type;
-
 $(function(){ 
   window.randomize = function() {
     if (score_type) {
@@ -710,7 +692,6 @@ $(function(){
   setTimeout(window.randomize, 200);
   $('.radial-progress').click(window.randomize);
     });
-
 // Code for closing the modal. Model will close if the x is clicked or anywhere outside of the modal is clicked. 
 // Credits: this functionality was based off the modal tutorial on w3schools.
 // Get the modal and get the <span> element that closes the modal
@@ -767,19 +748,64 @@ function showGraph() {
         .attr("transform", "translate(-185, 450) rotate(-90)")
         .style("font-family","avenir")
         .style("font-size","16");
-    //for (var i=0; i < filmstats.length; i++) {
+    svg2.selectAll("circle").data(filmstats)
+        .enter().append("circle")
+        .attr("cx", function(d){ return 50+xscale(Number(d["BoxOffice (US Gross)"].replace(/[, ]+/g, ""))/1000000);})
+        .attr("cy", function(d){ return 10+yscale(d["Oscars Won"]);})
+        .attr("r", 10)
+        .attr("fill", function(d,i){ 
+          if (d.Genre == "Comedy" || d.Genre == "Animation") {
+              return "#279221";
+          }
+          else if (d.Genre == "Crime") {
+              return "#1b62a5";
+          }
+        else if (d.Genre == "Biography" || d.Genre == "Drama") {
+            return "#804baf";
+        } 
+        else if (d.Genre == "Action" || d.Genre == "Adventure") {
+            return "#fd690f";
+        }
+        else {
+            return "#ca111f";
+        }
+    })
+        .attr("fill-opacity", "0.5")
+        .attr("stroke","none")
+        .on("click",displayPieCharts);
+    
+    var all = document.createElement("button");
+    var t10 = document.createTextNode("All");
+    all.append(t10);
+    document.getElementById("buttons").appendChild(all);
+    all.addEventListener("click", function() { 
+        svg2.selectAll("circle").remove();
         svg2.selectAll("circle").data(filmstats)
         .enter().append("circle")
         .attr("cx", function(d){ return 50+xscale(Number(d["BoxOffice (US Gross)"].replace(/[, ]+/g, ""))/1000000);})
         .attr("cy", function(d){ return 10+yscale(d["Oscars Won"]);})
         .attr("r", 10)
         .attr("fill", function(d,i){ 
-          return color(i); })
+          if (d.Genre == "Comedy" || d.Genre == "Animation") {
+              return "#279221";
+          }
+          else if (d.Genre == "Crime") {
+              return "#1b62a5";
+          }
+        else if (d.Genre == "Biography" || d.Genre == "Drama") {
+            return "#804baf";
+        } 
+        else if (d.Genre == "Action" || d.Genre == "Adventure") {
+            return "#fd690f";
+        }
+        else {
+            return "#ca111f";
+        };})
         .attr("fill-opacity", "0.5")
         .attr("stroke","none")
         .on("click",displayPieCharts);
-    //}
-
+    });
+        
     var comedy = document.createElement("button");
     var t0 = document.createTextNode("Comedy/Animation");
     comedy.append(t0);
@@ -853,7 +879,7 @@ function showGraph() {
     var horror = document.createElement("button");
     var t4 = document.createTextNode("Horror/Mystery/Sci-Fi");
     horror.append(t4);
-    document.getElementById("buttons").appendChild(horror);   
+    document.getElementById("buttons").appendChild(horror);  
     horror.addEventListener("click", function() {
         var hms = filmstats.filter(d => d.Genre == "Horror" || d.Genre == "Mystery" || d.Genre == "Sci-Fi");
         svg2.selectAll("circle").remove();
@@ -867,7 +893,10 @@ function showGraph() {
         .attr("stroke","none")
         .on("click",displayPieCharts);
     });
+    
 };
+    
+    
  function displayPieCharts(d){
   var scorescale=d3.scaleLinear().domain([0,100]).range([0,360]);
   //pie charts
@@ -875,15 +904,14 @@ svg2.append("path")
 .attr("id","pie-1")
 //.attr("d","M 150 175 L 150 75 A 100 100 0 1 1 80.91806823391462 247.3027434020724 Z")
 .attr("fill","powderblue")
- .attr("transform", "translate(780,80)")
+.attr("transform", "translate(780,80)")
+
 
  svg2.append("path")
 .attr("id","pie-2")
 //.attr("d","M 150 175 L 150 75 A 100 100 0 1 1 80.91806823391462 247.3027434020724 Z")
 .attr("fill","pink")
  .attr("transform", "translate(780,350)")
-
-
 // helper function to generate the segment as a path
 function generateSVGSegment(x, y, r, startAngle, endAngle) {
  
@@ -912,6 +940,7 @@ var a=(d["Audience (imdbRating)"]==100)? 99.99: d["Audience (imdbRating)"];
 var c=(d["Critic (RottenTomatoes)"]==100)?99.99:d["Critic (RottenTomatoes)"];
 var audscore=scorescale(a);
 var criticscore=scorescale(c);
+
 svg2.select('#pie-1').transition().duration(1000)
  .attrTween('d', function() {
    return interpolateSVGSegment(150, 175, 120, 0, audscore);
@@ -923,7 +952,6 @@ svg2.select('#pie-1').transition().duration(1000)
  document.getElementById("aud").innerHTML = d["Audience (imdbRating)"]+"%";
  document.getElementById("critic").innerHTML = d["Critic (RottenTomatoes)"]+"%";
 document.getElementById("movieTitle").innerHTML = d["Title"];
-
 svg2.append("rect")
 .attr("x", 790)
 .attr("y", 700)
@@ -936,21 +964,17 @@ svg2.append("rect")
 .attr("width", "150")
 .attr("height", "20")
 .attr("fill","pink");
-
 svg2.append("text")
 .attr("x", 810)
 .attr("y", 690)
 .attr("fill","black")
 .text("Audience Score");
-
 svg2.append("text")
 .attr("x", 1025)
 .attr("y", 690)
 .attr("fill","black")
 .text("Critics Score");
-
  }
-
 </script>    
     
 
