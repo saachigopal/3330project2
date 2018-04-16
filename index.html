@@ -579,6 +579,7 @@ var svg = d3.select("#sunburst").append("svg")
       document.getElementById("percentage").innerHTML = "";
     }
     function handleClick(d){
+      console.log(color((d.children ? d : d.parent).data.name));
       var genre=""; var year=0; var rating="";
       var topicList=[];
       var current=d;
@@ -903,14 +904,14 @@ function showGraph() {
 svg2.append("path")
 .attr("id","pie-1")
 //.attr("d","M 150 175 L 150 75 A 100 100 0 1 1 80.91806823391462 247.3027434020724 Z")
-.attr("fill","powderblue")
+.attr("fill","#aec7e8")
 .attr("transform", "translate(780,80)")
 
 
  svg2.append("path")
 .attr("id","pie-2")
 //.attr("d","M 150 175 L 150 75 A 100 100 0 1 1 80.91806823391462 247.3027434020724 Z")
-.attr("fill","pink")
+.attr("fill","#98df8a")
  .attr("transform", "translate(780,350)")
 // helper function to generate the segment as a path
 function generateSVGSegment(x, y, r, startAngle, endAngle) {
@@ -957,13 +958,13 @@ svg2.append("rect")
 .attr("y", 700)
 .attr("width", "150")
 .attr("height", "20")
-.attr("fill","powderblue");
+.attr("fill","#aec7e8");
 svg2.append("rect")
 .attr("x", 990)
 .attr("y", 700)
 .attr("width", "150")
 .attr("height", "20")
-.attr("fill","pink");
+.attr("fill","#98df8a");
 svg2.append("text")
 .attr("x", 810)
 .attr("y", 690)
