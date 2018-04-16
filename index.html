@@ -786,7 +786,7 @@ var svg = d3.select("#sunburst").append("svg")
         d3.select("#runtime").text(selectedMovie.Runtime);
         
         //Add the rest of the information - size title and year based on length of title
-        if (selectedMovie.Title.length + 7 > 29) {
+        if (selectedMovie.Title.length + 7 > 27) {
           d3.select("#movie_name").text(selectedMovie.Title)
           .attr("style","font-size: 32px; line-height: 34px");
           d3.select("#movie_year").text(" ("+selectedMovie.Year+")").attr("style","font-size: 23px");
