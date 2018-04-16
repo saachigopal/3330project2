@@ -958,7 +958,12 @@ function showGraph() {
         })
         .on("click",displayPieCharts);
     });
-        
+    
+    svg2.append("text")
+    .attr("x", 415)
+    .attr("y", 45)
+    .text("Click here!");
+  
     var comedy = document.createElement("button");
     var t0 = document.createTextNode("Comedy/Animation");
     comedy.append(t0);
