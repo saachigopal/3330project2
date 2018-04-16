@@ -531,6 +531,8 @@ var svg = d3.select("#sunburst").append("svg")
         })
         .attr("opacity", 1);
 
+   document.getElementById("summaryGenre").innerHTML = "Movie";
+   document.getElementById("summaryYear").innerHTML = "Generator";
    
     function mouseover(d){
       svg.selectAll("text").remove();
@@ -545,6 +547,9 @@ var svg = d3.select("#sunburst").append("svg")
       parent_name=parent_name.substring(2,parent_name.length);
       var topics=parent_name.split("->");
       var name="";
+      document.getElementById("summaryGenre").innerHTML = "";
+      document.getElementById("summaryYear").innerHTML = "";
+      document.getElementById("summaryRating").innerHTML = "";
       if(iter==3){
         name="Click to Generate Movie";
         document.getElementById("summaryGenre").innerHTML = topics[0];
@@ -598,8 +603,8 @@ var svg = d3.select("#sunburst").append("svg")
         })
         .attr("opacity", 1);
       document.getElementById("steps").innerHTML = "Select a Genre";
-      document.getElementById("summaryGenre").innerHTML = "";
-      document.getElementById("summaryYear").innerHTML = "";
+      document.getElementById("summaryGenre").innerHTML = "Movie";
+      document.getElementById("summaryYear").innerHTML = "Generator";
       document.getElementById("summaryRating").innerHTML = "";
       document.getElementById("percentage").innerHTML = "";
     }
