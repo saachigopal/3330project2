@@ -803,7 +803,19 @@ function showGraph() {
             return "#ca111f";
         };})
         .attr("fill-opacity", "0.5")
-        .attr("stroke","none")
+        .attr("stroke","white")
+        .on("mouseover", function() {
+            d3.select(this)
+            .transition()
+            .duration(1000)
+            .attr("stroke-width", 3)
+        })
+        .on("mouseout", function() {
+            d3.select(this)
+            .transition()
+            .duration(1000)
+            .attr("stroke-width", 0)
+        })
         .on("click",displayPieCharts);
     });
         
@@ -821,7 +833,19 @@ function showGraph() {
         .attr("r", 10)
         .attr("fill", "#279221")
         .attr("fill-opacity", "0.5")
-        .attr("stroke","none")
+        .attr("stroke","white")
+        .on("mouseover", function() {
+            d3.select(this)
+            .transition()
+            .duration(1000)
+            .attr("stroke-width", 3)
+        })
+        .on("mouseout", function() {
+            d3.select(this)
+            .transition()
+            .duration(1000)
+            .attr("stroke-width", 0)
+        })
         .on("click",displayPieCharts);
     });
     var drama = document.createElement("button");
@@ -838,7 +862,19 @@ function showGraph() {
         .attr("r", 10)
         .attr("fill", "#804baf")
         .attr("fill-opacity", "0.5")
-        .attr("stroke","none")
+        .attr("stroke","white")
+        .on("mouseover", function() {
+            d3.select(this)
+            .transition()
+            .duration(1000)
+            .attr("stroke-width", 3)
+        })
+        .on("mouseout", function() {
+            d3.select(this)
+            .transition()
+            .duration(1000)
+            .attr("stroke-width", 0)
+        })
         .on("click",displayPieCharts);
     
     });
@@ -874,7 +910,19 @@ function showGraph() {
         .attr("r", 10)
         .attr("fill", "#1b62a5")
         .attr("fill-opacity", "0.5")
-        .attr("stroke","none")
+        .attr("stroke","white")
+        .on("mouseover", function() {
+            d3.select(this)
+            .transition()
+            .duration(1000)
+            .attr("stroke-width", 3)
+        })
+        .on("mouseout", function() {
+            d3.select(this)
+            .transition()
+            .duration(1000)
+            .attr("stroke-width", 0)
+        })
         .on("click",displayPieCharts);
     });
     var horror = document.createElement("button");
@@ -891,7 +939,19 @@ function showGraph() {
         .attr("r", 10)
         .attr("fill", "#ca111f")
         .attr("fill-opacity", "0.5")
-        .attr("stroke","none")
+        .attr("stroke","white")
+        .on("mouseover", function() {
+            d3.select(this)
+            .transition()
+            .duration(1000)
+            .attr("stroke-width", 3)
+        })
+        .on("mouseout", function() {
+            d3.select(this)
+            .transition()
+            .duration(1000)
+            .attr("stroke-width", 0)
+        })
         .on("click",displayPieCharts);
     });
     
