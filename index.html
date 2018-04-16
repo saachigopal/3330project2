@@ -523,6 +523,16 @@ var svg = d3.select("#sunburst").append("svg")
     .on("mouseover",mouseover)
     .on("mouseout", mouseout)
     .on("click", handleClick)
+
+  var children = getChildren(root);
+  svg.selectAll("path")
+      .attr("opacity", 0.3);
+  svg.selectAll("path")
+        .filter(function(node) {
+        return (children.indexOf(node) >= 0);
+        })
+        .attr("opacity", 1);
+
    
     function mouseover(d){
       svg.selectAll("text").remove();
@@ -559,7 +569,7 @@ var svg = d3.select("#sunburst").append("svg")
       document.getElementById("steps").innerHTML = name;
       
       var ancestors = getAncestors(d);
-      // update sunburst (Fade all the segments and highlight only ancestors of current segment)
+      //update sunburst (Fade all the segments and highlight only ancestors of current segment)
       svg.selectAll("path")
       .attr("opacity", 0.3);
       svg.selectAll("path")
@@ -567,11 +577,28 @@ var svg = d3.select("#sunburst").append("svg")
         return (ancestors.indexOf(node) >= 0);
       })
       .attr("opacity", 1);
+
+      if(d.children!=null){
+        var children = getChildren(d);
+        svg.selectAll("path")
+        .filter(function(node) {
+        return (children.indexOf(node) >= 0);
+        })
+        .attr("opacity", 1);
+
+      }
+      
     }
     function mouseout(d){
       svg.selectAll("text").remove();
+      var children = getChildren(root);
       svg.selectAll("path")
-      .attr("opacity", 1);
+      .attr("opacity", 0.3);
+      svg.selectAll("path")
+        .filter(function(node) {
+        return (children.indexOf(node) >= 0);
+        })
+        .attr("opacity", 1);
       document.getElementById("steps").innerHTML = "Select a Genre";
       document.getElementById("summaryGenre").innerHTML = "";
       document.getElementById("summaryYear").innerHTML = "";
@@ -579,7 +606,7 @@ var svg = d3.select("#sunburst").append("svg")
       document.getElementById("percentage").innerHTML = "";
     }
     function handleClick(d){
-      console.log(color((d.children ? d : d.parent).data.name));
+      console.log(d.children);
       var genre=""; var year=0; var rating="";
       var topicList=[];
       var current=d;
@@ -669,6 +696,15 @@ var svg = d3.select("#sunburst").append("svg")
     while (current.parent) {
       path.unshift(current);
       current = current.parent;
+    }
+    return path;
+  }
+
+  function getChildren(node) {
+    var path = [];
+    var current = node.children;
+    for (var i = 0; i < current.length; i++) {
+      path.unshift(current[i]);
     }
     return path;
   }
