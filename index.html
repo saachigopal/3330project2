@@ -960,9 +960,9 @@ function showGraph() {
     });
     
     svg2.append("text")
-    .attr("x", 415)
-    .attr("y", 45)
-    .text("Click here!");
+    .attr("x", 60)
+    .attr("y", 40)
+    .text("*Click on the Circles!");
   
     var comedy = document.createElement("button");
     var t0 = document.createTextNode("Comedy/Animation");
@@ -1172,28 +1172,16 @@ svg2.select('#pie-1').transition().duration(1000)
  document.getElementById("aud").innerHTML = d["Audience (imdbRating)"]+"%";
  document.getElementById("critic").innerHTML = d["Critic (RottenTomatoes)"]+"%";
 document.getElementById("movieTitle").innerHTML = d["Title"];
-svg2.append("rect")
-.attr("x", 790)
-.attr("y", 665)
-.attr("width", "150")
-.attr("height", "20")
-.attr("fill","#aec7e8");
-svg2.append("rect")
-.attr("x", 990)
-.attr("y", 665)
-.attr("width", "150")
-.attr("height", "20")
-.attr("fill","#98df8a");
 svg2.append("text")
-.attr("x", 810)
-.attr("y", 650)
+.attr("x", 1080)
+.attr("y", 225)
 .attr("fill","black")
 .text("Audience Score");
 svg2.append("text")
-.attr("x", 1025)
-.attr("y", 650)
+.attr("x", 1080)
+.attr("y", 510)
 .attr("fill","black")
-.text("Critics Score");
+.text("Critics' Score");
  }
 </script>    
     
