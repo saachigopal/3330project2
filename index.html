@@ -251,9 +251,7 @@
     font-size: 180%;
     font-weight: bold;
     opacity:0.5;
-
   }
-
    #audscore{
     position:absolute;
     width: 180px;
@@ -808,7 +806,20 @@ function showGraph() {
         }
     })
         .attr("fill-opacity", "0.5")
-        .attr("stroke","none")
+        .attr("stroke","white")
+        .attr("stroke-width", 0)
+        .on("mouseover", function() {
+            d3.select(this)
+            .transition()
+            .duration(100)
+            .attr("stroke-width", 3)
+        })
+        .on("mouseout", function() {
+            d3.select(this)
+            .transition()
+            .duration(100)
+            .attr("stroke-width", 0)
+        })
         .on("click",displayPieCharts);
     
     var all = document.createElement("button");
@@ -839,7 +850,20 @@ function showGraph() {
             return "#ca111f";
         };})
         .attr("fill-opacity", "0.5")
-        .attr("stroke","none")
+        .attr("stroke-width", 0)
+        .attr("stroke","white")
+        .on("mouseover", function() {
+            d3.select(this)
+            .transition()
+            .duration(100)
+            .attr("stroke-width", 3)
+        })
+        .on("mouseout", function() {
+            d3.select(this)
+            .transition()
+            .duration(100)
+            .attr("stroke-width", 0)
+        })
         .on("click",displayPieCharts);
     });
         
@@ -857,7 +881,20 @@ function showGraph() {
         .attr("r", 10)
         .attr("fill", "#279221")
         .attr("fill-opacity", "0.5")
-        .attr("stroke","none")
+        .attr("stroke","white")
+        .attr("stroke-width", 0)
+        .on("mouseover", function() {
+            d3.select(this)
+            .transition()
+            .duration(100)
+            .attr("stroke-width", 3)
+        })
+        .on("mouseout", function() {
+            d3.select(this)
+            .transition()
+            .duration(100)
+            .attr("stroke-width", 0)
+        })
         .on("click",displayPieCharts);
     });
     var drama = document.createElement("button");
@@ -874,7 +911,20 @@ function showGraph() {
         .attr("r", 10)
         .attr("fill", "#804baf")
         .attr("fill-opacity", "0.5")
-        .attr("stroke","none")
+        .attr("stroke","white")
+        .attr("stroke-width", 0)
+        .on("mouseover", function() {
+            d3.select(this)
+            .transition()
+            .duration(100)
+            .attr("stroke-width", 3)
+        })
+        .on("mouseout", function() {
+            d3.select(this)
+            .transition()
+            .duration(100)
+            .attr("stroke-width", 0)
+        })
         .on("click",displayPieCharts);
     
     });
@@ -892,7 +942,20 @@ function showGraph() {
         .attr("r", 10)
         .attr("fill", "#fd690f")
         .attr("fill-opacity", "0.5")
-        .attr("stroke","none")
+        .attr("stroke","white")
+        .attr("stroke-width", 0)
+        .on("mouseover", function() {
+            d3.select(this)
+            .transition()
+            .duration(100)
+            .attr("stroke-width", 3)
+        })
+        .on("mouseout", function() {
+            d3.select(this)
+            .transition()
+            .duration(100)
+            .attr("stroke-width", 0)
+        })
         .on("click",displayPieCharts);
         
     });
@@ -910,7 +973,20 @@ function showGraph() {
         .attr("r", 10)
         .attr("fill", "#1b62a5")
         .attr("fill-opacity", "0.5")
-        .attr("stroke","none")
+        .attr("stroke","white")
+        .attr("stroke-width", 0)
+        .on("mouseover", function() {
+            d3.select(this)
+            .transition()
+            .duration(100)
+            .attr("stroke-width", 3)
+        })
+        .on("mouseout", function() {
+            d3.select(this)
+            .transition()
+            .duration(100)
+            .attr("stroke-width", 0)
+        })
         .on("click",displayPieCharts);
     });
     var horror = document.createElement("button");
@@ -927,7 +1003,20 @@ function showGraph() {
         .attr("r", 10)
         .attr("fill", "#ca111f")
         .attr("fill-opacity", "0.5")
-        .attr("stroke","none")
+        .attr("stroke","white")
+        .attr("stroke-width", 0)
+        .on("mouseover", function() {
+            d3.select(this)
+            .transition()
+            .duration(1000)
+            .attr("stroke-width", 3)
+        })
+        .on("mouseout", function() {
+            d3.select(this)
+            .transition()
+            .duration(1000)
+            .attr("stroke-width", 0)
+        })
         .on("click",displayPieCharts);
     });
     
@@ -942,8 +1031,6 @@ svg2.append("path")
 //.attr("d","M 150 175 L 150 75 A 100 100 0 1 1 80.91806823391462 247.3027434020724 Z")
 .attr("fill","#aec7e8")
 .attr("transform", "translate(780,40)")
-
-
  svg2.append("path")
 .attr("id","pie-2")
 //.attr("d","M 150 175 L 150 75 A 100 100 0 1 1 80.91806823391462 247.3027434020724 Z")
@@ -977,7 +1064,6 @@ var a=(d["Audience (imdbRating)"]==100)? 99.99: d["Audience (imdbRating)"];
 var c=(d["Critic (RottenTomatoes)"]==100)?99.99:d["Critic (RottenTomatoes)"];
 var audscore=scorescale(a);
 var criticscore=scorescale(c);
-
 svg2.select('#pie-1').transition().duration(1000)
  .attrTween('d', function() {
    return interpolateSVGSegment(150, 175, 120, 0, audscore);
