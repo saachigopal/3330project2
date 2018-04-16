@@ -250,7 +250,7 @@
     top:835px;
     font-size: 180%;
     font-weight: bold;
-    opacity:0.5;
+    opacity:0.8;
   }
    #audscore{
     position:absolute;
@@ -258,7 +258,7 @@
     text-align: center;
     left:1050px;
     top:950px;
-    opacity:0.5;
+    opacity:0.8;
     font-size: 160%;
   }
   #criticscore{
@@ -267,7 +267,7 @@
     text-align: center;
     left:1050px;
     top:1235px;
-    opacity:0.5;
+    opacity:0.8;
     font-size: 160%;
   }
   button {
@@ -1091,24 +1091,24 @@ svg2.select('#pie-1').transition().duration(1000)
 document.getElementById("movieTitle").innerHTML = d["Title"];
 svg2.append("rect")
 .attr("x", 790)
-.attr("y", 700)
+.attr("y", 665)
 .attr("width", "150")
 .attr("height", "20")
 .attr("fill","#aec7e8");
 svg2.append("rect")
 .attr("x", 990)
-.attr("y", 700)
+.attr("y", 665)
 .attr("width", "150")
 .attr("height", "20")
 .attr("fill","#98df8a");
 svg2.append("text")
 .attr("x", 810)
-.attr("y", 690)
+.attr("y", 650)
 .attr("fill","black")
 .text("Audience Score");
 svg2.append("text")
 .attr("x", 1025)
-.attr("y", 690)
+.attr("y", 650)
 .attr("fill","black")
 .text("Critics Score");
  }
