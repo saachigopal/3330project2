@@ -533,7 +533,7 @@ var svg = d3.select("#sunburst").append("svg")
 
    document.getElementById("summaryGenre").innerHTML = "Movie";
    document.getElementById("summaryYear").innerHTML = "Generator";
-   
+
     function mouseover(d){
       svg.selectAll("text").remove();
       var parent_name=d.data.name;
@@ -609,7 +609,15 @@ var svg = d3.select("#sunburst").append("svg")
       document.getElementById("percentage").innerHTML = "";
     }
     function handleClick(d){
-      console.log(d.children);
+      if(d.data.name!=""){
+      var ancestors = getAncestors(d);
+      svg.selectAll("path")
+      .attr("opacity", 0.3);
+      svg.selectAll("path")
+        .filter(function(node) {
+        return (ancestors.indexOf(node) >= 0);
+        })
+        .attr("opacity", 1);
       var genre=""; var year=0; var rating="";
       var topicList=[];
       var current=d;
@@ -675,6 +683,7 @@ var svg = d3.select("#sunburst").append("svg")
         d3.select("#box_office").text(selectedMovie["BoxOffice (US Gross)"]);
         d3.select("#plot_summary").text(selectedMovie.Plot);
       }, 1200); 
+    }
       
     }
     // Function used to generate movie suggestion based on inputs
