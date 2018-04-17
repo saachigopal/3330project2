@@ -897,7 +897,7 @@ d3.json("plot.json", function(data) {
 var svg2 = d3.select("#plot").append("svg")
         .attr("id", "graph")
         .attr("width", "1200")
-        .attr("height", "750")
+        .attr("height", "725")
     .attr("align","center");
     
 function showGraph() {
@@ -1217,12 +1217,12 @@ svg2.select('#pie-1').transition().duration(1000)
 document.getElementById("movieTitle").innerHTML = d["Title"];
 svg2.append("text")
 .attr("x", 1080)
-.attr("y", 225)
+.attr("y", 235)
 .attr("fill","black")
 .text("Audience Score");
 svg2.append("text")
 .attr("x", 1080)
-.attr("y", 510)
+.attr("y", 520)
 .attr("fill","black")
 .text("Critics' Score");
  }
