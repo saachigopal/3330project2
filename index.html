@@ -344,7 +344,6 @@
  <div id="sunburst">
   <header>
     <h1 id="steps" style="font-size: 53px; font-weight: 900; font-family: 'Poiret One', cursive; margin-bottom: 10px; margin-top: 5px;">Movie Roulette</h1>
-    <!-- <h1 id="steps" style=" font-weight:bold">Movie Roulette</h1> -->
   </header>
   <div class="container" id="instruction">Hover to select a genre</div> 
   <div class="container" id="summaryGenre"></div>
@@ -921,7 +920,7 @@ d3.json("plot.json", function(data) {
 var svg2 = d3.select("#plot").append("svg")
         .attr("id", "graph")
         .attr("width", "1200")
-        .attr("height", "750")
+        .attr("height", "725")
     .attr("align","center");
 
     svg2.append("text").text("Movie Acclaim vs Box Office Revenue")
@@ -1244,12 +1243,12 @@ svg2.select('#pie-1').transition().duration(1000)
 document.getElementById("movieTitle").innerHTML = d["Title"];
 svg2.append("text")
 .attr("x", 1080)
-.attr("y", 225)
+.attr("y", 235)
 .attr("fill","black")
 .text("Audience Score");
 svg2.append("text")
 .attr("x", 1080)
-.attr("y", 510)
+.attr("y", 520)
 .attr("fill","black")
 .text("Critic Score");
  }
