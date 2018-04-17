@@ -120,8 +120,8 @@
     border-right: 16px solid #3498db;
     border-bottom: 16px solid grey;
     border-left: 16px solid grey;
-    width: 310px;
-    height: 310px;
+    width: 320px;
+    height: 320px;
     -webkit-animation: spin 2s linear infinite;
     animation: spin 2s linear infinite;
   }
@@ -147,9 +147,10 @@
     left:490px;
     width: 280px;
     text-align: center;
-    font-family: 'Playfair Display', serif;
-    font-size: 21px;
-    top:340px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 20.5px;
+    top:345px;
   }
   #summaryGenre{
     top:380px;
@@ -745,8 +746,8 @@ var svg = d3.select("#sunburst").append("svg")
       newDiv.className="loader";
       newDiv.id="loadbar"
       newDiv.style.position="absolute";
-      newDiv.style.left = (1.34*radius+2)+'px';
-      newDiv.style.top = (height-18)/2.64+'px';
+      newDiv.style.left = (1.34*radius-1)+'px';
+      newDiv.style.top = (height-43)/2.64+'px';
       document.body.appendChild(newDiv);
       var selectedMovie;
       //Create Delay for Loader
