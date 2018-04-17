@@ -923,6 +923,11 @@ var svg2 = d3.select("#plot").append("svg")
         .attr("width", "1200")
         .attr("height", "750")
     .attr("align","center");
+
+    svg2.append("text").text("Movie Acclaim vs Box Office Revenue")
+    .attr("style","font-family: 'Playfair Display', serif;")
+    .style("font-size","25")
+    .attr("x",100).attr("y",20);
     
 function showGraph() {
     var xscale = d3.scaleLinear().domain([0,600]).range([0,660]);
@@ -1010,7 +1015,7 @@ function showGraph() {
         };})
         .attr("fill-opacity", "0.5")
         .attr("stroke-width", 0)
-        .attr("stroke","white")
+        .attr("stroke","gray")
         .on("mouseover", function() {
             d3.select(this)
             .transition()
@@ -1028,8 +1033,8 @@ function showGraph() {
     
     svg2.append("text")
     .attr("x", 60)
-    .attr("y", 40)
-    .text("*Click on the Circles!");
+    .attr("y", 710)
+    .text("*Click on the circles!");
   
     var comedy = document.createElement("button");
     var t0 = document.createTextNode("Comedy/Animation");
